@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToddlerScanV2.View.AllToddlersView">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding MockToddlers}"
+                      SelectedItem="{Binding SelectedToddler, Mode=TwoWay}"
+                      HasUnevenRows="True" CachingStrategy="RecycleElement" SeparatorVisibility="None">
+                <!--<ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ToddlerClicked}" 
+                        EventArgsConverter="{StaticResource LocalItemTappedConverter}">
+                    </behaviors:EventToCommandBehavior>
+                </ListView.Behaviors>-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding FirstName}"></Label>
+                                    <Label Text="{Binding LastName}"></Label>
+                                    <Label Text="is in grade"></Label>
+                                    <Label Text="{Binding Grade}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
