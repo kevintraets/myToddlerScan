@@ -548,11 +548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj",
+      "projectUniqueName": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj",
       "projectName": "ToddlerScanV2",
-      "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj",
+      "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj",
       "packagesPath": "C:\\Users\\11601860\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\obj\\",
+      "outputPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

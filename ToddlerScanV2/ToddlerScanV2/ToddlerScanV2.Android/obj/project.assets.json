@@ -1027,6 +1027,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "Newtonsoft.Json >= 12.0.2",
       "ToddlerScanV2 >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
@@ -1042,11 +1043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\ToddlerScanV2.Android.csproj",
+      "projectUniqueName": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\ToddlerScanV2.Android.csproj",
       "projectName": "ToddlerScanV2.Android",
-      "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\ToddlerScanV2.Android.csproj",
+      "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\ToddlerScanV2.Android.csproj",
       "packagesPath": "C:\\Users\\11601860\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\obj\\",
+      "outputPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1063,8 +1064,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj": {
-              "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj"
+            "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj": {
+              "projectPath": "C:\\Users\\11601860\\Desktop\\ToddlerScanVersionTwo\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2\\ToddlerScanV2.csproj"
             }
           }
         }
@@ -1073,6 +1074,10 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2.1, )"

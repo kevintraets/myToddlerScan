@@ -10,5 +10,10 @@ namespace ToddlerScanV2.Models
         public String FirstName { get; set; }
         public String LastName { get; set; }
         public String Grade { get; set; }
+
+        public override string ToString()
+        {
+            return FirstName;
+        }
     }
 }

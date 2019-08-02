@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -9,49 +10,15 @@ using Xamarin.Forms;
 namespace ToddlerScanV2.Models
 {
     public class User 
-    {
+    { 
+        [PrimaryKey]
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
-        public string username;
-
-        public User()
+        public override string ToString()
         {
-            SignInProcedure = new Command(OnSubmit);
-        }
-
-        //Getters and setters
-        public string Username
-        {
-            get { return username; }
-            set
-            {
-                username = value;
-                PropertyChanged(this, new PropertyChangedEventArgs("Username"));
-            }
-        }
-        public string password;
-
-        public string Password
-        {
-            get { return password; }
-
-            set
-            {
-                password = value;
-                PropertyChanged(this, new PropertyChangedEventArgs("Password"));
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged = delegate { };
-
-        public ICommand SignInProcedure { get; set; }
-        public NavigationPage MainPage { get; private set; }
-
-        public void OnSubmit()
-        {
-            if (!string.IsNullOrEmpty(Username))
-            {
-                MessagingCenter.Send(this, "LoginAlert", Username);
-            }
+            return $"{Username} and {Password}";
         }
 
     }

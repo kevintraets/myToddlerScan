@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using ToddlerScanV2.Contracts.Repository.Services.General;
 using ToddlerScanV2.Models;
 using ToddlerScanV2.View;
 using ToddlerScanV2.ViewModels.Base;
@@ -12,10 +13,10 @@ namespace ToddlerScanV2.ViewModels
     public class ChangeGradeViewModel : ViewModelBase
     {
         private Toddler _selectedToddler;
-        private INavigation _navigation;
+        private INavigationService _navigation;
+        public ICommand changeGradeButtonClicked { get; set; }
 
-
-        public ChangeGradeViewModel(Toddler selectedToddler, INavigation navigation)
+        public ChangeGradeViewModel(Toddler selectedToddler, INavigationService navigation)
         {
             _selectedToddler = selectedToddler;
             _navigation = navigation;
@@ -35,13 +36,12 @@ namespace ToddlerScanV2.ViewModels
             }
         }
 
-
-        public ICommand changeGradeButtonClicked { get; set; }
-
         private void onSubmit(object obj)
         {
             MockAPI.MockAPI.changeToddlerGradeMock(_selectedToddler.Id, _selectedToddler.Grade);
-            _navigation.PushAsync(new AllToddlersView());
+            _navigation.NavigateAsync(nameof(AllToddlersView));
         }
+
+        
     }
 }

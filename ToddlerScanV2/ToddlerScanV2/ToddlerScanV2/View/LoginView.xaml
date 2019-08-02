@@ -8,7 +8,8 @@
             <Entry x:Name="entry_username" Text="{Binding Username}"/>
             <Label x:Name="lbl_password" Text="Password"/>
             <Entry x:Name="entry_password" IsPassword="True" Text="{Binding Password}"/>
-            <Button x:Name="btn_signin" Text="Sign In" Command="{Binding SignInProcedure}"/>
+            <Button x:Name="btn_login" Text="Login" Command="{Binding loginButtonPressed}"/>
+            <Button x:Name="btn_signup" Text="Sign up" Command="{Binding signUpButtonPressed}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

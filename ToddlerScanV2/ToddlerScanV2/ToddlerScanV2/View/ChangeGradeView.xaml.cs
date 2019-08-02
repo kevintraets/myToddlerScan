@@ -4,19 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ToddlerScanV2.Models;
+using ToddlerScanV2.Services.General;
 using ToddlerScanV2.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ToddlerScanV2.Contracts.Repository.Services.General;
 
 namespace ToddlerScanV2.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChangeGradeView : ContentPage
 	{
+        private INavigationService _navigationService { get; } = App.NavigationService;
 		public ChangeGradeView (Toddler toddler)
 		{
 			InitializeComponent ();
-            BindingContext = new ChangeGradeViewModel(toddler, Navigation);
+            BindingContext = new ChangeGradeViewModel(toddler, _navigationService);
 
         }
 	}

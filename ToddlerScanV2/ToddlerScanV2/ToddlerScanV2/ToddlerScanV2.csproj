@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="Behaviors\" />
-    <Folder Include="Bootstrap\" />
   </ItemGroup>
 
   <ItemGroup>
