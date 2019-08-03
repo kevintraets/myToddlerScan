@@ -12,25 +12,36 @@ namespace ToddlerScanV2.ViewModels
 {
     public class ChangeGradeViewModel : ViewModelBase
     {
-        private Toddler _selectedToddler;
+        private Toddler _selectedtoddler;
         private INavigationService _navigation;
         public ICommand changeGradeButtonClicked { get; set; }
 
-        public ChangeGradeViewModel(Toddler selectedToddler, INavigationService navigation)
+
+        public ChangeGradeViewModel(INavigationService navigation)
         {
-            _selectedToddler = selectedToddler;
+            //------------View isn't corresponding---------------------
+            MessagingCenter.Subscribe<Application, Toddler>(this, "send", (e, toddler) =>
+            {
+                _selectedtoddler = toddler;
+                Console.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);
+            });
             _navigation = navigation;
             changeGradeButtonClicked = new Command(onSubmit);
+
         }
 
         public Toddler SelectedToddler
         {
-            get { return _selectedToddler; }
+            get
+            {
+                Console.WriteLine("get ");
+                return _selectedtoddler;
+            }
             set
             {
-                if (_selectedToddler != value)
+                if (_selectedtoddler != value)
                 {
-                    _selectedToddler = value;
+                    _selectedtoddler = value;
                     OnPropertyChanged();
                 }
             }
@@ -38,7 +49,7 @@ namespace ToddlerScanV2.ViewModels
 
         private void onSubmit(object obj)
         {
-            MockAPI.MockAPI.changeToddlerGradeMock(_selectedToddler.Id, _selectedToddler.Grade);
+            MockAPI.MockAPI.changeToddlerGradeMock(_selectedtoddler.Id, _selectedtoddler.Grade);
             _navigation.NavigateAsync(nameof(AllToddlersView));
         }
 

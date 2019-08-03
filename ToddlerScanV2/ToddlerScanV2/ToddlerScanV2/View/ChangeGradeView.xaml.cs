@@ -16,10 +16,10 @@ namespace ToddlerScanV2.View
 	public partial class ChangeGradeView : ContentPage
 	{
         private INavigationService _navigationService { get; } = App.NavigationService;
-		public ChangeGradeView (Toddler toddler)
+		public ChangeGradeView ()
 		{
 			InitializeComponent ();
-            BindingContext = new ChangeGradeViewModel(toddler, _navigationService);
+            BindingContext = new ChangeGradeViewModel(_navigationService);
 
         }
 	}

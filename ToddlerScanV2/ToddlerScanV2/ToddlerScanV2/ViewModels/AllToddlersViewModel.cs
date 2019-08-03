@@ -36,10 +36,11 @@ namespace ToddlerScanV2.ViewModels
             }
         }
 
-        private  void ClickedToddler()
+        private async void ClickedToddler()
         {
-            _navigation.NavigateAsync(nameof(ChangeGradeView), _selectedToddler);
-                      
+            await _navigation.NavigateAsync(nameof(ChangeGradeView));
+            MessagingCenter.Send(Application.Current, "send", _selectedToddler);
+            Console.WriteLine("send " + _selectedToddler);
         }
 
         public ObservableCollection<Toddler> MockToddlers
