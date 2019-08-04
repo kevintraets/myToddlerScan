@@ -1419,6 +1419,7 @@ namespace ToddlerScanV2.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_Snackbar = global::ToddlerScanV2.Droid.Resource.Style.Widget_Design_Snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TabLayout = global::ToddlerScanV2.Droid.Resource.Style.Widget_Design_TabLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TextInputLayout = global::ToddlerScanV2.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::ToddlerScanV2.Droid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::ToddlerScanV2.Droid.Resource.Styleable.ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::ToddlerScanV2.Droid.Resource.Styleable.ActionBar_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::ToddlerScanV2.Droid.Resource.Styleable.ActionBar_backgroundSplit;
@@ -5067,6 +5068,9 @@ namespace ToddlerScanV2.Droid
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
+			// aapt resource value: 0x7F010185
+			public const int collectionViewStyle = 2130772357;
+			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
@@ -6566,6 +6570,9 @@ namespace ToddlerScanV2.Droid
 			
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
+			
+			// aapt resource value: 0x7F050404
+			public const int collectionViewStyle = 2131035140;
 			
 			// aapt resource value: 0x7F050002
 			public const int MainTheme = 2131034114;
