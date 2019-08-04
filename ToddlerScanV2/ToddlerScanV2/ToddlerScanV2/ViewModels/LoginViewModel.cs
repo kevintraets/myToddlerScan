@@ -37,7 +37,9 @@ namespace ToddlerScanV2.ViewModels
 
 
         public string Username {
-            get { return username; }
+            get {
+                Console.WriteLine(username.Length + " test ");
+                return username; }
             set
             {
                 username = value;

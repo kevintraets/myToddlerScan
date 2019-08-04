@@ -8,6 +8,9 @@ namespace ToddlerScanV2.Services.Data
 {
     public class ValidateUserService : IValidateUserService
     {
+
+        public ValidateUserService() { }
+
         public List<User> getAllUsers()
         {
             return MockAPI.MockAPI.getAllUsersMock();

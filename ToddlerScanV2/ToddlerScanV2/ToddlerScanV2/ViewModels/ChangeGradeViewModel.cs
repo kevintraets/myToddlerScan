@@ -14,7 +14,6 @@ namespace ToddlerScanV2.ViewModels
     {
         private Toddler _selectedtoddler;
         private INavigationService _navigation;
-        public ICommand changeGradeButtonClicked { get; set; }
 
 
         public ChangeGradeViewModel(INavigationService navigation)
@@ -29,6 +28,8 @@ namespace ToddlerScanV2.ViewModels
             changeGradeButtonClicked = new Command(onSubmit);
 
         }
+
+        public ICommand changeGradeButtonClicked { get; set; }
 
         public Toddler SelectedToddler
         {

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "fbf0c0803a591874a85d8e33a5f8d4f56f485823"
+    "signature": "2d4222a6df9111f9b5d72eda0a9b386892743dfe"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,7 +12,7 @@
           "Autofac": "4.9.3",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
-          "Xamarin.Forms": "4.1.0.618606",
+          "Xamarin.Forms": "4.2.0.618605-pre2",
           "sqlite-net-pcl": "1.5.231"
         },
         "runtime": {
@@ -80,19 +80,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.1.0.618606": {
+      "Xamarin.Forms/4.2.0.618605-pre2": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.2.0.10"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.2.0.10"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.2.0.10"
           }
         }
       }
@@ -153,12 +153,12 @@
       "path": "sqlitepclraw.core/1.1.11",
       "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
     },
-    "Xamarin.Forms/4.1.0.618606": {
+    "Xamarin.Forms/4.2.0.618605-pre2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
-      "path": "xamarin.forms/4.1.0.618606",
-      "hashPath": "xamarin.forms.4.1.0.618606.nupkg.sha512"
+      "sha512": "sha512-/aJmHYW2djou6TXOQtceNwLQ5Yoqs9tEt4wuyg2LllwIEM11yy15gzifaaMS/JMnhBRAm6m5QKGGJ8lXwkIKXw==",
+      "path": "xamarin.forms/4.2.0.618605-pre2",
+      "hashPath": "xamarin.forms.4.2.0.618605-pre2.nupkg.sha512"
     }
   }
 }

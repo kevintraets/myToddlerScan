@@ -84,7 +84,7 @@
           "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.618606": {
+      "Xamarin.Forms/4.2.0.618605-pre2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -385,10 +385,10 @@
         "sqlitepclraw.core.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.618606": {
-      "sha512": "qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
+    "Xamarin.Forms/4.2.0.618605-pre2": {
+      "sha512": "/aJmHYW2djou6TXOQtceNwLQ5Yoqs9tEt4wuyg2LllwIEM11yy15gzifaaMS/JMnhBRAm6m5QKGGJ8lXwkIKXw==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.618606",
+      "path": "xamarin.forms/4.2.0.618605-pre2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -627,7 +627,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.618606.nupkg.sha512",
+        "xamarin.forms.4.2.0.618605-pre2.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
@@ -637,7 +637,7 @@
       "Autofac >= 4.9.3",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
-      "Xamarin.Forms >= 4.1.0.618606",
+      "Xamarin.Forms >= 4.2.0.618605-pre2",
       "sqlite-net-pcl >= 1.5.231"
     ]
   },
@@ -698,7 +698,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.618606, )"
+            "version": "[4.2.0.618605-pre2, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

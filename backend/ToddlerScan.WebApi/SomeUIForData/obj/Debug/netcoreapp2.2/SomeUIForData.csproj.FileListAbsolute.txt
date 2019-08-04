@@ -1,0 +1,16 @@
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\SomeUIForData.deps.json
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\SomeUIForData.runtimeconfig.json
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\SomeUIForData.runtimeconfig.dev.json
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\SomeUIForData.dll
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\SomeUIForData.pdb
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\ToddlerScan.Data.dll
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\ToddlerScan.Domain.dll
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\ToddlerScan.Data.pdb
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\bin\Debug\netcoreapp2.2\ToddlerScan.Domain.pdb
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.csprojAssemblyReference.cache
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.csproj.CoreCompileInputs.cache
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.AssemblyInfoInputs.cache
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.AssemblyInfo.cs
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.csproj.CopyComplete
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.dll
+Z:\School\toddlerscan-kevintraets-1\backend\ToddlerScan.WebApi\SomeUIForData\obj\Debug\netcoreapp2.2\SomeUIForData.pdb
