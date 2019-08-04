@@ -7,11 +7,6 @@
             <ListView ItemsSource="{Binding MockToddlers}"
                       SelectedItem="{Binding SelectedToddler, Mode=TwoWay}"
                       HasUnevenRows="True" CachingStrategy="RecycleElement" SeparatorVisibility="None">
-                <!--<ListView.Behaviors>
-                    <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ToddlerClicked}" 
-                        EventArgsConverter="{StaticResource LocalItemTappedConverter}">
-                    </behaviors:EventToCommandBehavior>
-                </ListView.Behaviors>-->
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -20,7 +15,7 @@
                                     <Label Text="{Binding FirstName}"></Label>
                                     <Label Text="{Binding LastName}"></Label>
                                     <Label Text="is in grade"></Label>
-                                    <Label Text="{Binding Grade}"></Label>
+                                    <Label BackgroundColor="red" Text="{Binding Grade}"></Label>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

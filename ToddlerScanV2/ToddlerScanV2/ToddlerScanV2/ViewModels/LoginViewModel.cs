@@ -19,7 +19,7 @@ namespace ToddlerScanV2.ViewModels
         //Variables
         public ICommand loginButtonPressed { get; set; }
         public ICommand signUpButtonPressed { get; set; }
-        private string username;
+        private string username = "";
         private string password;
         User user = new User();
         private IValidateUserService _validateUserService;

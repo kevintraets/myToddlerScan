@@ -1,14 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToddlerScanV2.View.LoginView">
+             x:Class="ToddlerScanV2.View.LoginView"
+             xmlns:local="clr-namespace:ToddlerScanV2.Converters">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:IntToBoolConverter x:Key="intToBool"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="lbl_username" Text="Username"/>
             <Entry x:Name="entry_username" Text="{Binding Username}"/>
             <Label x:Name="lbl_password" Text="Password"/>
             <Entry x:Name="entry_password" IsPassword="True" Text="{Binding Password}"/>
-            <Button x:Name="btn_login" Text="Login" Command="{Binding loginButtonPressed}"/>
+            <Button x:Name="btn_login" Text="Login" Command="{Binding loginButtonPressed}"
+                    IsEnabled="{Binding Source={x:Reference entry_username},
+                                Path=Text.Length,
+                                Converter={StaticResource intToBool}}"/>
             <Button x:Name="btn_signup" Text="Sign up" Command="{Binding signUpButtonPressed}"/>
         </StackLayout>
     </ContentPage.Content>
