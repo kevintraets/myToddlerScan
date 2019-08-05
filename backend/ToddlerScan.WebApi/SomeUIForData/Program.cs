@@ -10,6 +10,7 @@ namespace SomeUIForData
         static void Main(string[] args)
         {
             //insertNewToddler();
+            //insertNewTeacher();
             showAllToddlers();
         }
 
@@ -25,6 +26,20 @@ namespace SomeUIForData
             using (var context = new ToddlerScanContext())
             {
                 context.Toddlers.Add(toddler);
+                context.SaveChanges();
+            }
+        }
+
+        private static void insertNewTeacher()
+        {
+            var teacher = new Teacher
+            {
+                FirstName = "Lowie",
+                LastName = "Vangaal"
+            };
+            using (var context = new ToddlerScanContext())
+            {
+                context.Teachers.Add(teacher);
                 context.SaveChanges();
             }
         }

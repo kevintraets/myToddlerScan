@@ -19,7 +19,7 @@ namespace ToddlerScanV2.ViewModels
         public ChangeGradeViewModel(INavigationService navigation)
         {
             //------------View isn't corresponding---------------------
-            MessagingCenter.Subscribe<Application, Toddler>(this, "send", (e, toddler) =>
+            MessagingCenter.Subscribe<Application, Toddler>(this, "sendSelectedToddler", (e, toddler) =>
             {
                 _selectedtoddler = toddler;
                 Console.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);

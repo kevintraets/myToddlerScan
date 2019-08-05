@@ -15,13 +15,14 @@
                                     <Label Text="{Binding FirstName}"></Label>
                                     <Label Text="{Binding LastName}"></Label>
                                     <Label Text="is in grade"></Label>
-                                    <Label BackgroundColor="red" Text="{Binding Grade}"></Label>
+                                    <Label Text="{Binding Grade}"></Label>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Scan Code" Command="{Binding scanButtonClicked}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

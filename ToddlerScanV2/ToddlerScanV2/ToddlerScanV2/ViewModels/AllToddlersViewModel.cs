@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Text;
+using System.Windows.Input;
 using ToddlerScanV2.Contracts.Repository.Services.Data;
 using ToddlerScanV2.Contracts.Repository.Services.General;
 using ToddlerScanV2.Extensions;
@@ -17,12 +19,14 @@ namespace ToddlerScanV2.ViewModels
         private Toddler _selectedToddler;
         private readonly IToddlerService _toddlerService;
         private INavigationService _navigation;
+        public ICommand scanButtonClicked { get; set; }
 
 
         public AllToddlersViewModel(INavigationService navigation, IToddlerService toddlerService)
         {
             _navigation = navigation;
             _toddlerService = toddlerService;
+            scanButtonClicked = new Command(OnScanButtonClick);
         }
 
         public Toddler SelectedToddler
@@ -39,8 +43,13 @@ namespace ToddlerScanV2.ViewModels
         private async void ClickedToddler()
         {
             await _navigation.NavigateAsync(nameof(ChangeGradeView));
-            MessagingCenter.Send(Application.Current, "send", _selectedToddler);
+            MessagingCenter.Send(Application.Current, "sendSelectedToddler", _selectedToddler);
             Console.WriteLine("send " + _selectedToddler);
+        }
+
+        private void OnScanButtonClick(object obj)
+        {
+            Debug.WriteLine("ScanButtonClicked");
         }
 
         public ObservableCollection<Toddler> MockToddlers
