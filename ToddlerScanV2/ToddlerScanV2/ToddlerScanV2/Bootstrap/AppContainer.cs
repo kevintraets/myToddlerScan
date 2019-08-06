@@ -23,6 +23,7 @@ namespace ToddlerScanV2.Bootstrap
             builder.RegisterType<LoginViewModel>();
             builder.RegisterType<AllToddlersViewModel>();
             builder.RegisterType<ChangeGradeViewModel>();
+            builder.RegisterType<ScanViewModel>();
 
             //Services
             builder.RegisterType<ToddlerService>().As<IToddlerService>();

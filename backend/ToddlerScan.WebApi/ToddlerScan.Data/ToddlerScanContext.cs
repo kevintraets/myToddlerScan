@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
+using System;
 using ToddlerScan.Domain;
 
 namespace ToddlerScan.Data
@@ -33,5 +34,59 @@ namespace ToddlerScan.Data
                 .UseSqlServer(
                 "Server = (localdb)\\mssqllocaldb; Database = ToddlerScanData; Trusted_Connection = true; ");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Scan>()
+                .HasMany(s => s.ToddlerScans);
+
+            modelBuilder.Entity<Trip>()
+                .HasMany(t => t.Toddlers);
+
+            modelBuilder.Entity<Toddler>()
+                .Property(t => t.FirstName)
+                .IsRequired();
+
+            Toddler toddlerSeed = new Toddler
+            {
+                Id = 5,
+                FirstName = "Kevin",
+                LastName = "Traets",
+                Grade = "3"
+            };
+            Teacher teacherSeed = new Teacher
+            {
+                Id = 5,
+                FirstName = "Kris",
+                LastName = "Hermans"
+            };
+
+            Trip tripSeed = new Trip
+            {
+                Id = 1,
+                Date = DateTime.Now,
+                TeacherId = teacherSeed.Id,
+                Title = "Zee"
+            };
+            Scan scanSeed = new Scan
+            {
+                Id = 1,
+                Name = "Middagpauze",
+                TeacherId = teacherSeed.Id,
+                TripId = tripSeed.Id,
+            };
+            ToddlerTrip toddlerTripSeed = new ToddlerTrip
+            {
+                Id = 1,
+                ToddlerId = toddlerSeed.Id,
+                TripId = tripSeed.Id
+            };
+            modelBuilder.Entity<Toddler>().HasData(toddlerSeed);
+            modelBuilder.Entity<Teacher>().HasData(teacherSeed);
+            modelBuilder.Entity<Trip>().HasData(tripSeed);
+            modelBuilder.Entity<Scan>().HasData(scanSeed);
+            modelBuilder.Entity<ToddlerTrip>().HasData(toddlerTripSeed);
+        }
+
     }
 }

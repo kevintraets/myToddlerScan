@@ -10,6 +10,7 @@ using ToddlerScanV2.Extensions;
 using ToddlerScanV2.Models;
 using ToddlerScanV2.View;
 using ToddlerScanV2.ViewModels.Base;
+using ToddlerScanV2.Constants;
 using Xamarin.Forms;
 
 namespace ToddlerScanV2.ViewModels
@@ -43,13 +44,14 @@ namespace ToddlerScanV2.ViewModels
         private async void ClickedToddler()
         {
             await _navigation.NavigateAsync(nameof(ChangeGradeView));
-            MessagingCenter.Send(Application.Current, "sendSelectedToddler", _selectedToddler);
-            Console.WriteLine("send " + _selectedToddler);
+            MessagingCenter.Send(Application.Current, Constant.sendToddlerInformation, _selectedToddler);
+            Debug.WriteLine(Constant.sendToddlerInformation + _selectedToddler);
         }
 
         private void OnScanButtonClick(object obj)
         {
             Debug.WriteLine("ScanButtonClicked");
+            _navigation.NavigateAsync(nameof(ScanView));
         }
 
         public ObservableCollection<Toddler> MockToddlers

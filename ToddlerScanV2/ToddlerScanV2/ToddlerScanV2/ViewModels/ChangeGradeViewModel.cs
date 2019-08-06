@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows.Input;
+using ToddlerScanV2.Constants;
 using ToddlerScanV2.Contracts.Repository.Services.General;
 using ToddlerScanV2.Models;
 using ToddlerScanV2.View;
@@ -18,11 +20,11 @@ namespace ToddlerScanV2.ViewModels
 
         public ChangeGradeViewModel(INavigationService navigation)
         {
-            //------------View isn't corresponding---------------------
-            MessagingCenter.Subscribe<Application, Toddler>(this, "sendSelectedToddler", (e, toddler) =>
+            //------------View isn't corresponding, object IS available for editing---------------------
+            MessagingCenter.Subscribe<Application, Toddler>(this, Constant.sendToddlerInformation, (e, toddler) =>
             {
                 _selectedtoddler = toddler;
-                Console.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);
+                Debug.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);
             });
             _navigation = navigation;
             changeGradeButtonClicked = new Command(onSubmit);
@@ -35,7 +37,7 @@ namespace ToddlerScanV2.ViewModels
         {
             get
             {
-                Console.WriteLine("get ");
+                Debug.WriteLine("in get ");
                 return _selectedtoddler;
             }
             set

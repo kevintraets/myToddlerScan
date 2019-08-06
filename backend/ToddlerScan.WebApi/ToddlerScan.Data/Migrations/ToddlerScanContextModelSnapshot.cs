@@ -27,13 +27,22 @@ namespace ToddlerScan.Data.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int>("TeacherId");
+
                     b.Property<int>("TripId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TripId");
-
                     b.ToTable("Scans");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Middagpauze",
+                            TeacherId = 1,
+                            TripId = 1
+                        });
                 });
 
             modelBuilder.Entity("ToddlerScan.Domain.Teacher", b =>
@@ -49,6 +58,14 @@ namespace ToddlerScan.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teachers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Kris",
+                            LastName = "Hermans"
+                        });
                 });
 
             modelBuilder.Entity("ToddlerScan.Domain.Toddler", b =>
@@ -57,15 +74,29 @@ namespace ToddlerScan.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired();
 
                     b.Property<string>("Grade");
 
                     b.Property<string>("LastName");
 
+                    b.Property<int?>("TripId");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("TripId");
+
                     b.ToTable("Toddlers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Kevin",
+                            Grade = "3",
+                            LastName = "Traets"
+                        });
                 });
 
             modelBuilder.Entity("ToddlerScan.Domain.ToddlerScan", b =>
@@ -104,6 +135,14 @@ namespace ToddlerScan.Data.Migrations
                     b.HasIndex("TripId");
 
                     b.ToTable("ToddlerTrips");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ToddlerId = 1,
+                            TripId = 1
+                        });
                 });
 
             modelBuilder.Entity("ToddlerScan.Domain.Trip", b =>
@@ -114,7 +153,7 @@ namespace ToddlerScan.Data.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<int?>("TeacherId");
+                    b.Property<int>("TeacherId");
 
                     b.Property<string>("Title");
 
@@ -123,14 +162,22 @@ namespace ToddlerScan.Data.Migrations
                     b.HasIndex("TeacherId");
 
                     b.ToTable("Trips");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Date = new DateTime(2019, 8, 6, 10, 1, 16, 239, DateTimeKind.Local).AddTicks(7683),
+                            TeacherId = 1,
+                            Title = "Zee"
+                        });
                 });
 
-            modelBuilder.Entity("ToddlerScan.Domain.Scan", b =>
+            modelBuilder.Entity("ToddlerScan.Domain.Toddler", b =>
                 {
                     b.HasOne("ToddlerScan.Domain.Trip")
-                        .WithMany("Scans")
-                        .HasForeignKey("TripId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany("Toddlers")
+                        .HasForeignKey("TripId");
                 });
 
             modelBuilder.Entity("ToddlerScan.Domain.ToddlerScan", b =>
@@ -153,7 +200,7 @@ namespace ToddlerScan.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("ToddlerScan.Domain.Trip", "Trip")
-                        .WithMany("ToddlerTrips")
+                        .WithMany()
                         .HasForeignKey("TripId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -162,7 +209,8 @@ namespace ToddlerScan.Data.Migrations
                 {
                     b.HasOne("ToddlerScan.Domain.Teacher", "Teacher")
                         .WithMany()
-                        .HasForeignKey("TeacherId");
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

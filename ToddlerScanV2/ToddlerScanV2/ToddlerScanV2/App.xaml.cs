@@ -1,4 +1,5 @@
 ﻿using System;
+using ToddlerScanV2.Constants;
 using ToddlerScanV2.Contracts.Repository.Services.Data;
 using ToddlerScanV2.Contracts.Repository.Services.General;
 using ToddlerScanV2.Services.General;
@@ -16,10 +17,11 @@ namespace ToddlerScanV2
         {
             InitializeComponent();
 
-            NavigationService.Configure("LoginView", typeof(LoginView));
-            NavigationService.Configure("ChangeGradeView", typeof(ChangeGradeView));
-            NavigationService.Configure("AllToddlersView", typeof(AllToddlersView));
-            var mainPage = ((NavigationService)NavigationService).SetRootPage("LoginView");
+            NavigationService.Configure(Constant.loginView, typeof(LoginView));
+            NavigationService.Configure(Constant.changeGradeView, typeof(ChangeGradeView));
+            NavigationService.Configure(Constant.allToddlersView, typeof(AllToddlersView));
+            NavigationService.Configure(Constant.scanView, typeof(ScanView));
+            var mainPage = ((NavigationService)NavigationService).SetRootPage(Constant.loginView);
 
             MainPage = mainPage;
 

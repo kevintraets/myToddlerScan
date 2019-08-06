@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
 using System.Windows.Input;
+using ToddlerScanV2.Constants;
 using ToddlerScanV2.Contracts.Repository.Services.Data;
 using ToddlerScanV2.Contracts.Repository.Services.General;
 using ToddlerScanV2.Extensions;
@@ -38,12 +40,12 @@ namespace ToddlerScanV2.ViewModels
 
         public string Username {
             get {
-                Console.WriteLine(username.Length + " test ");
+                Debug.WriteLine(username.Length + " is length of username "); //Because Login button is enabled on startup
                 return username; }
             set
             {
                 username = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Username"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.username));
             }
         }
 
@@ -53,7 +55,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 password = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Password"));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.password));
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace ToddlerScan.Domain
@@ -8,6 +9,7 @@ namespace ToddlerScan.Domain
     {
         public int Id { get; set; }
         public int ToddlerId { get; set; }
+        [ForeignKey("ToddlerId")]
         public Toddler Toddler { get; set; }
     }
 }
