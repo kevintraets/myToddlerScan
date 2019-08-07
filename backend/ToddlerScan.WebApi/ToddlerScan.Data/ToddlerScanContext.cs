@@ -49,14 +49,14 @@ namespace ToddlerScan.Data
 
             Toddler toddlerSeed = new Toddler
             {
-                Id = 5,
+                Id = 1,
                 FirstName = "Kevin",
                 LastName = "Traets",
                 Grade = "3"
             };
             Teacher teacherSeed = new Teacher
             {
-                Id = 5,
+                Id=1,
                 FirstName = "Kris",
                 LastName = "Hermans"
             };

@@ -23,8 +23,7 @@ namespace ToddlerScanV2.View
         {
             InitializeComponent();
             BindingContext = new ScanViewModel(_navigationService, _scanService);
-            TestLabel.Text = "Kevin";
-
+           
         }
     }
 }
