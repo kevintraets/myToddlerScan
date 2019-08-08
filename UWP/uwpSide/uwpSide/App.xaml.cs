@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Autofac;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpSide.Bootstrap;
 using uwpSide.Views;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -29,9 +31,12 @@ namespace uwpSide
         /// </summary>
         public App()
         {
+            AppContainer.RegisterDependencies();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
         }
+
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -67,7 +72,7 @@ namespace uwpSide
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(NavPage), e.Arguments);
+                    rootFrame.Navigate(typeof(NavView), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

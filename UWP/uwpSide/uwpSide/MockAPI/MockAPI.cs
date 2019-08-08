@@ -105,12 +105,12 @@ namespace uwpSide.MockAPI
 
         };
 
-        private static List<Trip> getAllTripsMock()
+        public static List<Trip> getAllTripsMock()
         {
             return allTripsMock;
         }
 
-        private static List<Toddler> getAllToddlersFromTripByTripId(int id)
+        public static IEnumerable<Toddler> getAllToddlersFromTripByTripId(int id)
         {
             List<Trip> allTrips = getAllTripsMock();
             List<Toddler> toddlers = allTripsMock.Where(trip => trip.Id.Equals(id)).FirstOrDefault().Toddlers;
