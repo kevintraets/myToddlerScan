@@ -25,6 +25,8 @@ namespace uwpSide.Bootstrap
             builder.RegisterType<MockAPI.MockAPI>();
 
             builder.RegisterType<TripService>().As<ITripService>();
+            builder.RegisterType<ToddlerService>().As<IToddlerService>();
+            builder.RegisterType<TeacherService>().As<ITeacherService>();
 
             _container = builder.Build();
         }

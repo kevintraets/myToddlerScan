@@ -16,5 +16,38 @@
                 <GradientStop Color="Blue" Offset="0.9"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <CommandBar>
+            <CommandBar.Content>
+                <Button x:Name="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" VerticalAlignment="Top" Click="Back_Click"/>
+            </CommandBar.Content>
+        </CommandBar>
+        <ListView x:Name="ToddlersList" ItemsSource="{Binding MockToddlers}" SelectedItem="{Binding SelectedToddler, Mode=TwoWay}" HorizontalAlignment="Left" Height="537" Margin="1071,71,0,0" VerticalAlignment="Top" Width="386">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock>
+                            <Run Foreground="Black" Text="{Binding FirstName}"/>
+                            <Run Foreground="Black" Text="{Binding LastName}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <DatePicker  x:Name="TripDate"  SelectedDate="{Binding DateTrip, Mode=TwoWay}" HorizontalAlignment="Left" Margin="59,340,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TripName" Text="{Binding TripName, Mode=TwoWay}" HorizontalAlignment="Left" Margin="59,268,0,0" PlaceholderText="Name" VerticalAlignment="Top" Width="296"/>
+        <ComboBox x:Name="TeachersName" ItemsSource="{Binding MockTeacher}" SelectedItem="{Binding SelectedTeacher, Mode=TwoWay}" HorizontalAlignment="Left" Margin="59,414,0,0" VerticalAlignment="Top" Width="296" PlaceholderText="Teacher">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock>
+                            <Run  Text="{Binding FirstName}"/>
+                            <Run  Text="{Binding LastName}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button x:Name="ConfirmButton" Command="{Binding confirmTripClicked}" Content="Confirm Trip"  HorizontalAlignment="Left" Margin="176,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.139"/>
+        <TextBlock Foreground="Black" HorizontalAlignment="Left" Margin="1071,713,0,0" Text="{Binding InformationString}" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
     </Grid>
 </Page>

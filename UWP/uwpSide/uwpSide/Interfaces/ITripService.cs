@@ -11,5 +11,7 @@ namespace uwpSide.Interfaces
     {
         List<Trip> getAllTrips();
         IEnumerable<Toddler> getAllToddlersByTripId(int id);
+
+        void addTrip(Trip trip);
     }
 }

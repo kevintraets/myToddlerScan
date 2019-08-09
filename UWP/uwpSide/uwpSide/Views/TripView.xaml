@@ -21,20 +21,20 @@
                 <Button x:Name="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" VerticalAlignment="Top" Click="Back_Click"/>
             </CommandBar.Content>
         </CommandBar>
-        <ListView ItemsSource="{Binding MockTrips}" SelectedItem="{Binding SelectedTrip, Mode=TwoWay}" Margin="10,84,885,83" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ListView ItemsSource="{Binding MockTrips}" SelectedItem="{Binding SelectedTrip, Mode=TwoWay}" Margin="10,84,1161,83">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding Title}"/>
+                        <TextBlock Foreground="Black" Text="{Binding Title}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ListView ItemsSource="{Binding MockToddlers}" Margin="953,84,10,83" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ListView ItemsSource="{Binding MockToddlers}" Margin="1075,84,10,83">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding FirstName}"/>
+                        <TextBlock Foreground="Black" Text="{Binding FirstName, Mode=TwoWay}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

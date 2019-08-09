@@ -10,7 +10,7 @@ namespace uwpSide.MockAPI
     public class MockAPI
     {
         //----------------------------API Toddlers---------------------------------------
-        private static IEnumerable<Toddler> allToddlersMock = new List<Toddler>
+        private static List<Toddler> allToddlersMock = new List<Toddler>
         {
                 new Toddler {Id = 1, FirstName = "R2D2", LastName = "", Grade = "1"},
                 new Toddler {Id = 2, FirstName = "Jar Jar", LastName = "Binks", Grade = "2"},
@@ -33,6 +33,11 @@ namespace uwpSide.MockAPI
         {
             Toddler toddlerToChangeGrade = getToddlerByIdMock(id);
             toddlerToChangeGrade.Grade = grade;
+        }
+
+        public static void addToddler (Toddler toddler)
+        {
+            allToddlersMock.Add(toddler);
         }
 
 
@@ -115,6 +120,11 @@ namespace uwpSide.MockAPI
             List<Trip> allTrips = getAllTripsMock();
             List<Toddler> toddlers = allTripsMock.Where(trip => trip.Id.Equals(id)).FirstOrDefault().Toddlers;
             return toddlers;
+        }
+
+        public static void addTrip (Trip trip)
+        {
+            allTripsMock.Add(trip);
         }
     }
 }

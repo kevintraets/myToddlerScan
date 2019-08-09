@@ -8,6 +8,6 @@ namespace uwpSide.Interfaces
 {
     public interface INavigateService
     {
-
+        void GoBack();
     }
 }

@@ -20,6 +20,11 @@ namespace uwpSide.Services
             return MockAPI.MockAPI.getAllTripsMock();
         }
 
+        public void addTrip(Trip trip)
+        {
+            MockAPI.MockAPI.addTrip(trip);
+        }
+
 
     }
 }

@@ -32,5 +32,15 @@ namespace uwpSide.Views
         {
             this.Frame.Navigate(typeof(TripView));
         }
+
+        private void PlanTrip_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PlanTripView));
+        }
+
+        private void CreateCode_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ScanQRView));
+        }
     }
 }

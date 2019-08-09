@@ -10,7 +10,7 @@ namespace uwpSide.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime Date { get; set; }
+        public DateTimeOffset Date { get; set; }
         public int TeacherId { get; set; }
         public Teacher teacher { get; set; }
         public List<Toddler> Toddlers { get; set; }

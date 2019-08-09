@@ -54,6 +54,8 @@ namespace uwpSide.ViewModels
             set
             {
                 _mockToddlers = value;
+                OnPropertyChanged("MockToddlers");
+
             }
         }
 
@@ -64,7 +66,9 @@ namespace uwpSide.ViewModels
             set
             {
                 _selectedTrip = value;
+                OnPropertyChanged("SelectedTrip");
                 ClickedTrip();
+
             }
         }
 
@@ -72,6 +76,7 @@ namespace uwpSide.ViewModels
         private void ClickedTrip()
         {
             tripId = _selectedTrip.Id;
+            Debug.WriteLine("in clicked trip: " + _selectedTrip.Toddlers.Count() + tripId);
             OnPropertyChanged("MockToddlers");
         }
     }
