@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using uwpSide.Bootstrap;
+using uwpSide.Constants;
 using uwpSide.Extensions;
 using uwpSide.Interfaces;
 using uwpSide.Models;
@@ -30,8 +31,9 @@ namespace uwpSide.ViewModels
         private DateTimeOffset _dateTrip = DateTimeOffset.Now;
         public RelayCommand confirmTripClicked { get; set; }
         private string _informationString;
+        private string _tripAddedString;
 
-        //Testing Code
+        //Because I need to give a new trip an ID.
         private int index;
 
         public PlanTripViewModel(ITeacherService teacherService, IToddlerService toddlerService, ITripService tripService)
@@ -44,8 +46,8 @@ namespace uwpSide.ViewModels
             _tripService = tripService;
             confirmTripClicked = new RelayCommand(onTripConfirmedClick);
 
-            //Mocking Code TODO Put index in service
-            index = _tripService.getAllTrips().Count() + 1;
+            //Mocking automatic assignment of a ID in a live database
+            index = _tripService.getAllTrips().Count();
             
         }
 
@@ -112,9 +114,11 @@ namespace uwpSide.ViewModels
 
         public void onTripConfirmedClick()
         {
+            index++;
+
             Trip plannedTrip = new Trip
             {
-                Id = index++,
+                Id = index,
                 Date = _dateTrip,
                 teacher = _selectedTeacher,
                 TeacherId = _selectedTeacher.Id,
@@ -124,10 +128,10 @@ namespace uwpSide.ViewModels
 
             _tripService.addTrip(plannedTrip);
             allSelectedToddlers = new List<Toddler>();
-            Debug.WriteLine("planned trip added");
-            Debug.WriteLine(_tripService.getAllTrips().Count());
-
-            
+            Debug.WriteLine($"{DateTime.Now}, planned trip added");
+            _tripAddedString = ConstantString.TripAddedString;
+            OnPropertyChanged("TripAddedString");
+           
         }
 
         public string InformationString
@@ -139,6 +143,10 @@ namespace uwpSide.ViewModels
                 OnPropertyChanged("InformationString");
                 Debug.WriteLine($"{DateTime.Now}, informationstring is {_informationString}");
             }
+        }
+        public string TripAddedString
+        {
+            get { return _tripAddedString; }
         }
 
     }

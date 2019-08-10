@@ -34,7 +34,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Foreground="Black" Text="{Binding FirstName, Mode=TwoWay}"/>
+                        <TextBlock Foreground="Black">
+                            <Run  Text="{Binding FirstName}"/>
+                            <Run  Text="{Binding LastName}"/>
+                        </TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

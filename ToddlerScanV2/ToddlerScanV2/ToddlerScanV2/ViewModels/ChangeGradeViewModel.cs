@@ -20,15 +20,14 @@ namespace ToddlerScanV2.ViewModels
 
         public ChangeGradeViewModel(INavigationService navigation)
         {
-            //------------View isn't corresponding, object IS available for editing---------------------
             MessagingCenter.Subscribe<Application, Toddler>(this, Constant.sendToddlerInformation, (e, toddler) =>
             {
                 _selectedtoddler = toddler;
                 Debug.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);
+                OnPropertyChanged("SelectedToddler");
             });
             _navigation = navigation;
             changeGradeButtonClicked = new Command(onSubmit);
-
         }
 
         public ICommand changeGradeButtonClicked { get; set; }
@@ -45,7 +44,7 @@ namespace ToddlerScanV2.ViewModels
                 if (_selectedtoddler != value)
                 {
                     _selectedtoddler = value;
-                    OnPropertyChanged();
+                    OnPropertyChanged("SelectedToddler");
                 }
             }
         }

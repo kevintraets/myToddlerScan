@@ -25,6 +25,9 @@ namespace uwpSide.Services
             MockAPI.MockAPI.addTrip(trip);
         }
 
-
+        public int getTotalTripsNumber()
+        {
+           return MockAPI.MockAPI.getNumberOfTrips();
+        }
     }
 }

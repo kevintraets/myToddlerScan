@@ -120,14 +120,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Bootstrap\AppContainer.cs" />
+    <Compile Include="Constants\ConstantString.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Interfaces\INavigateService.cs" />
     <Compile Include="Interfaces\ITeacherService.cs" />
     <Compile Include="Interfaces\IToddlerService.cs" />
     <Compile Include="Interfaces\ITripService.cs" />
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MockAPI\MockAPI.cs" />
     <Compile Include="Models\Scan.cs" />
     <Compile Include="Models\Teacher.cs" />
@@ -178,10 +176,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\PlanTripView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -213,9 +207,7 @@
       <Version>2.4.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Constants\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

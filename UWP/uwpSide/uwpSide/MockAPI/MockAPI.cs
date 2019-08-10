@@ -13,7 +13,7 @@ namespace uwpSide.MockAPI
         private static List<Toddler> allToddlersMock = new List<Toddler>
         {
                 new Toddler {Id = 1, FirstName = "R2D2", LastName = "", Grade = "1"},
-                new Toddler {Id = 2, FirstName = "Jar Jar", LastName = "Binks", Grade = "2"},
+                new Toddler {Id = 2, FirstName = "C3PO", LastName = "", Grade = "2"},
                 new Toddler {Id = 3, FirstName = "Luke", LastName = "Skywalker", Grade = "3"}
         };
 
@@ -68,10 +68,10 @@ namespace uwpSide.MockAPI
             new Trip
             {
                 Id = 1,
-                Title = "Zee",
+                Title = "Dagobah",
                 Date = DateTime.Now,
                 TeacherId = 2,
-                teacher = new Teacher {Id = 2, FirstName = "Han", LastName = "Yoda"},
+                teacher = new Teacher {Id = 2, FirstName = "Master", LastName = "Yoda"},
                 Toddlers = new List<Toddler>
                 {
                 new Toddler {Id = 1, FirstName = "R2D2", LastName = "", Grade = "1"},
@@ -82,13 +82,13 @@ namespace uwpSide.MockAPI
             new Trip
             {
                 Id = 2,
-                Title = "Ardennen",
+                Title = "Hoth",
                 Date = DateTime.Now,
                 TeacherId = 1,
-                teacher = new Teacher {Id = 1, FirstName = "Master", LastName = "Yoda"},
+                teacher = new Teacher {Id = 1, FirstName = "Han", LastName = "Solo"},
                 Toddlers = new List<Toddler>
                 {
-                new Toddler {Id = 2, FirstName = "Jar Jar", LastName = "Binks", Grade = "2"},
+                new Toddler {Id = 2, FirstName = "C3PO", LastName = "", Grade = "2"},
                 new Toddler {Id = 3, FirstName = "Luke", LastName = "Skywalker", Grade = "3"}
                 }
             },
@@ -96,14 +96,28 @@ namespace uwpSide.MockAPI
             new Trip
             {
                 Id = 3,
-                Title = "Zoo",
+                Title = "Tatooine",
                 Date = DateTime.Now,
                 TeacherId = 3,
                 teacher = new Teacher {Id = 3, FirstName = "Darth", LastName = "Vader"},
                 Toddlers = new List<Toddler>
                 {
                 new Toddler {Id = 1, FirstName = "R2D2", LastName = "", Grade = "1"},
-                new Toddler {Id = 2, FirstName = "Jar Jar", LastName = "Binks", Grade = "2"},
+                new Toddler {Id = 1, FirstName = "C3PO", LastName = "", Grade = "2"},
+                new Toddler {Id = 3, FirstName = "Luke", LastName = "Skywalker", Grade = "3"}
+                }
+            },
+
+            new Trip
+            {
+                Id = 4,
+                Title = "Death Star",
+                Date = DateTime.Now,
+                TeacherId = 3,
+                teacher = new Teacher {Id = 3, FirstName = "Darth", LastName = "Vader"},
+                Toddlers = new List<Toddler>
+                {
+                new Toddler {Id = 1, FirstName = "R2D2", LastName = "", Grade = "1"},
                 new Toddler {Id = 3, FirstName = "Luke", LastName = "Skywalker", Grade = "3"}
                 }
             }
@@ -125,6 +139,11 @@ namespace uwpSide.MockAPI
         public static void addTrip (Trip trip)
         {
             allTripsMock.Add(trip);
+        }
+
+        public static int getNumberOfTrips()
+        {
+            return allTripsMock.Count();
         }
     }
 }

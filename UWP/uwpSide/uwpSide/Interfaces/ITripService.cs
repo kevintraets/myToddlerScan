@@ -13,5 +13,7 @@ namespace uwpSide.Interfaces
         IEnumerable<Toddler> getAllToddlersByTripId(int id);
 
         void addTrip(Trip trip);
+
+        int getTotalTripsNumber();
     }
 }
