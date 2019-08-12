@@ -9,6 +9,7 @@ using Xamarin.Forms;
 
 namespace ToddlerScanV2.Models
 {
+
     public class User 
     { 
         [PrimaryKey]

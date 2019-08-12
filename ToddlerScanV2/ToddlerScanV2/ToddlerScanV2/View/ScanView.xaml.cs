@@ -16,13 +16,16 @@ namespace ToddlerScanV2.View
     public partial class ScanView : ContentPage
     {
         private INavigationService _navigationService { get; } = App.NavigationService;
-        private IScanService _scanService = new ScanService();
+        private IScanService _scanService;
+        private ITeacherService _teacherService;
+        private IToddlerService _toddlerService;
+        private ITripService _tripService;
 
 
         public ScanView()
         {
             InitializeComponent();
-            BindingContext = new ScanViewModel(_navigationService, _scanService);
+            BindingContext = new ScanViewModel(_navigationService, _scanService, _toddlerService, _tripService, _teacherService);
            
         }
     }

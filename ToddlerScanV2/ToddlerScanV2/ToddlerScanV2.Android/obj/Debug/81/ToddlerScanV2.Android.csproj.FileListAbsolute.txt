@@ -160,6 +160,7 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\Todd
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\System.ServiceModel.Internals.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\System.Web.Services.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\Mono.Security.pdb
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\ToddlerScanV2.dll.mdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\ToddlerScanV2.Android.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\Autofac.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
@@ -183,7 +184,6 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\Todd
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\System.Web.Services.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\Mono.Security.pdb
-C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\ToddlerScanV2.dll.mdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\ToddlerScanV2.dll.mdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\android\assets\ToddlerScanV2.dll.mdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\android\assets\Autofac.pdb
@@ -209,6 +209,4 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\Todd
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\bin\Debug\netstandard2.0\ToddlerScanV2.dll
-C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\bin\Debug\ToddlerScanV2.dll.mdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2.Android\obj\Debug\81\linksrc\ToddlerScanV2.dll.mdb

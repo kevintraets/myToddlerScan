@@ -27,6 +27,7 @@ namespace uwpSide.Bootstrap
             builder.RegisterType<TripService>().As<ITripService>();
             builder.RegisterType<ToddlerService>().As<IToddlerService>();
             builder.RegisterType<TeacherService>().As<ITeacherService>();
+            builder.RegisterType<NavigateService>().As<INavigateService>();
 
             _container = builder.Build();
         }

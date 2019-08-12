@@ -1,4 +1,5 @@
 ﻿using System;
+using ToddlerScanV2.Bootstrap;
 using ToddlerScanV2.Constants;
 using ToddlerScanV2.Contracts.Repository.Services.Data;
 using ToddlerScanV2.Contracts.Repository.Services.General;
@@ -16,7 +17,7 @@ namespace ToddlerScanV2
         public App()
         {
             InitializeComponent();
-
+            AppContainer.RegisterDependencies();
             NavigationService.Configure(Constant.loginView, typeof(LoginView));
             NavigationService.Configure(Constant.changeGradeView, typeof(ChangeGradeView));
             NavigationService.Configure(Constant.allToddlersView, typeof(AllToddlersView));

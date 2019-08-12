@@ -4,6 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpSide.Interfaces;
+using uwpSide.Services;
+using uwpSide.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -26,6 +29,7 @@ namespace uwpSide.Views
         public NavView()
         {
             this.InitializeComponent();
+            this.DataContext = new NavViewModel();
         }
         //Temporary Navigation
         private void TripView_Tapped(object sender, TappedRoutedEventArgs e)

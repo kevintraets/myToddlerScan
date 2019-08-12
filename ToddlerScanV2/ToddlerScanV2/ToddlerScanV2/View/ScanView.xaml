@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ToddlerScanV2.View.ScanView">
+             x:Class="ToddlerScanV2.View.ScanView"
+             xmlns:local="crl-namespace:ToddlerScanV2.Picture">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="ScanView"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <!--<Entry Placeholder="trip" Text="{Binding Trip, Mode=TwoWay}"></Entry>
+            <Entry Placeholder="name Scan" Text="{Binding ScanName}"></Entry>-->
+            <Button Text="Scan" Command="{Binding QRScanned}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

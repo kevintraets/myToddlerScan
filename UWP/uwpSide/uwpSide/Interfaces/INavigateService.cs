@@ -8,6 +8,7 @@ namespace uwpSide.Interfaces
 {
     public interface INavigateService
     {
+        void NavigateTo(Type viewType);
         void GoBack();
     }
 }

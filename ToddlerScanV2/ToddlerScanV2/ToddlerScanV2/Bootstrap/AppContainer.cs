@@ -27,9 +27,12 @@ namespace ToddlerScanV2.Bootstrap
 
             //Services
             builder.RegisterType<ToddlerService>().As<IToddlerService>();
+            builder.RegisterType<TeacherService>().As<ITeacherService>();
+            builder.RegisterType<TripService>().As<ITripService>();
+            builder.RegisterType<ScanService>().As<IScanService>();
 
             //Services - general
-            builder.RegisterType<NavigationService>().As<INavigationService>();
+           builder.RegisterType<NavigationService>().As<INavigationService>();
 
             //General
             builder.RegisterType<GenericRepository>().As<IGenericRepository>();

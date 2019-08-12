@@ -12,6 +12,7 @@ using ToddlerScanV2.View;
 using ToddlerScanV2.ViewModels.Base;
 using ToddlerScanV2.Constants;
 using Xamarin.Forms;
+using ToddlerScanV2.Bootstrap;
 
 namespace ToddlerScanV2.ViewModels
 {
@@ -25,6 +26,7 @@ namespace ToddlerScanV2.ViewModels
 
         public AllToddlersViewModel(INavigationService navigation, IToddlerService toddlerService)
         {
+            toddlerService = AppContainer.Resolve<IToddlerService>();
             _navigation = navigation;
             _toddlerService = toddlerService;
             scanButtonClicked = new Command(OnScanButtonClick);
@@ -41,16 +43,15 @@ namespace ToddlerScanV2.ViewModels
             }
         }
 
-        private async void ClickedToddler()
+        private void ClickedToddler()
         {
-            await _navigation.NavigateAsync(nameof(ChangeGradeView));
+             _navigation.NavigateAsync(nameof(ChangeGradeView));
             MessagingCenter.Send(Application.Current, Constant.sendToddlerInformation, _selectedToddler);
             Debug.WriteLine(Constant.sendToddlerInformation + _selectedToddler);
         }
 
         private void OnScanButtonClick(object obj)
         {
-            Debug.WriteLine("ScanButtonClicked");
             _navigation.NavigateAsync(nameof(ScanView));
         }
 

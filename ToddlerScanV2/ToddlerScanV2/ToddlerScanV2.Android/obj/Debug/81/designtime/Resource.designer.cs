@@ -1972,6 +1972,9 @@ namespace ToddlerScanV2.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::ToddlerScanV2.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ToddlerScanV2.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::ToddlerScanV2.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::ToddlerScanV2.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::ToddlerScanV2.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::ToddlerScanV2.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Animation
@@ -5074,6 +5077,9 @@ namespace ToddlerScanV2.Droid
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
 			
+			// aapt resource value: 0x7F010186
+			public const int contentFrame = 2130772358;
+			
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
 			
@@ -5820,6 +5826,12 @@ namespace ToddlerScanV2.Droid
 			
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
+			
+			// aapt resource value: 0x7F020074
+			public const int zxingscanneractivitylayout = 2130837620;
+			
+			// aapt resource value: 0x7F020075
+			public const int zxingscannerfragmentlayout = 2130837621;
 			
 			static Layout()
 			{

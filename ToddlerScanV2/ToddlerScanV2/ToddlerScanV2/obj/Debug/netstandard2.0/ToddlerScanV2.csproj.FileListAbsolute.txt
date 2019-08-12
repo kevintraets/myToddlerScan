@@ -23,8 +23,8 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\Todd
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.csproj.CoreCompileInputs.cache
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.AssemblyInfoInputs.cache
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.AssemblyInfo.cs
-C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.dll
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\ToddlerScanV2.csprojAssemblyReference.cache
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\View\ScanView.xaml.g.cs
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\XamlC.stamp

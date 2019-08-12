@@ -1019,6 +1019,7 @@ int id clip_horizontal 0x7f0a004e
 int id clip_vertical 0x7f0a004f
 int id collapseActionView 0x7f0a0039
 int id container 0x7f0a008f
+int id contentFrame 0x7f0a00d4
 int id contentPanel 0x7f0a0066
 int id coordinator 0x7f0a0090
 int id custom 0x7f0a006d
@@ -1066,7 +1067,7 @@ int id main_appbar 0x7f0a00ca
 int id main_scrollview 0x7f0a00cd
 int id main_tablayout 0x7f0a00cc
 int id main_toolbar 0x7f0a00cb
-int id masked 0x7f0a00d5
+int id masked 0x7f0a00d6
 int id media_actions 0x7f0a00bd
 int id message 0x7f0a00d3
 int id middle 0x7f0a0031
@@ -1181,7 +1182,7 @@ int id uniform 0x7f0a002d
 int id up 0x7f0a0009
 int id useLogo 0x7f0a0026
 int id view_offset_helper 0x7f0a0016
-int id visible 0x7f0a00d4
+int id visible 0x7f0a00d5
 int id volume_item_container 0x7f0a00af
 int id withText 0x7f0a003c
 int id wrap_content 0x7f0a002e
@@ -1272,6 +1273,8 @@ int layout support_simple_spinner_dropdown_item 0x7f040044
 int layout tabbar 0x7f040045
 int layout toolbar 0x7f040046
 int layout tooltip 0x7f040047
+int layout zxingscanneractivitylayout 0x7f040048
+int layout zxingscannerfragmentlayout 0x7f040049
 int mipmap icon 0x7f030000
 int mipmap icon_round 0x7f030001
 int mipmap launcher_foreground 0x7f030002

@@ -108,8 +108,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "ToddlerScanV2.Android.dll" comes first in this list. */
 		"ToddlerScanV2.Android.dll",
 		"Autofac.dll",
+		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Polly.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
@@ -141,6 +143,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"ZXing.Net.Mobile.Core.dll",
+		"zxing.portable.dll",
+		"ZXingNetMobile.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

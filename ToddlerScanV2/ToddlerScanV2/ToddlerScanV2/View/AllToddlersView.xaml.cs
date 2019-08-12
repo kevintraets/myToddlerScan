@@ -17,7 +17,7 @@ namespace ToddlerScanV2.View
 	public partial class AllToddlersView : ContentPage
 	{
         private INavigationService _navigationService { get; } = App.NavigationService;
-        private IToddlerService _toddlerService = new ToddlerService();
+        private IToddlerService _toddlerService;
         
 		public AllToddlersView ()
 		{
