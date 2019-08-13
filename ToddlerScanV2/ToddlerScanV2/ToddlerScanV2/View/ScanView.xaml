@@ -11,6 +11,7 @@
             <!--<Entry Placeholder="trip" Text="{Binding Trip, Mode=TwoWay}"></Entry>
             <Entry Placeholder="name Scan" Text="{Binding ScanName}"></Entry>-->
             <Button Text="Scan" Command="{Binding QRScanned}"></Button>
+            <Label Text="{Binding ScanConfirmed}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

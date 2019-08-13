@@ -46,8 +46,8 @@ namespace ToddlerScanV2.ViewModels
         private void ClickedToddler()
         {
              _navigation.NavigateAsync(nameof(ChangeGradeView));
-            MessagingCenter.Send(Application.Current, Constant.sendToddlerInformation, _selectedToddler);
-            Debug.WriteLine(Constant.sendToddlerInformation + _selectedToddler);
+            MessagingCenter.Send(Application.Current, Constant.SendToddlerInformation, _selectedToddler);
+            Debug.WriteLine(Constant.SendToddlerInformation + _selectedToddler);
         }
 
         private void OnScanButtonClick(object obj)

@@ -21,11 +21,11 @@ namespace ToddlerScanV2.ViewModels
 
         public ChangeGradeViewModel(INavigationService navigation)
         {
-            MessagingCenter.Subscribe<Application, Toddler>(this, Constant.sendToddlerInformation, (e, toddler) =>
+            MessagingCenter.Subscribe<Application, Toddler>(this, Constant.SendToddlerInformation, (e, toddler) =>
             {
                 _selectedtoddler = toddler;
                 Debug.WriteLine("in subscribe " + _selectedtoddler + " " + toddler);
-                OnPropertyChanged("SelectedToddler");
+                OnPropertyChanged(Constant.SelectedToddlerProperty);
             });
             _navigation = navigation;
             changeGradeButtonClicked = new Command(onSubmit);
@@ -43,7 +43,7 @@ namespace ToddlerScanV2.ViewModels
                 if (_selectedtoddler != value)
                 {
                     _selectedtoddler = value;
-                    OnPropertyChanged("SelectedToddler");
+                    OnPropertyChanged(Constant.SelectedToddlerProperty);
                 }
             }
         }

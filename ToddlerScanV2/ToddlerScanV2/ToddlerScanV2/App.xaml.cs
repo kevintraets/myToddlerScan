@@ -18,11 +18,11 @@ namespace ToddlerScanV2
         {
             InitializeComponent();
             AppContainer.RegisterDependencies();
-            NavigationService.Configure(Constant.loginView, typeof(LoginView));
-            NavigationService.Configure(Constant.changeGradeView, typeof(ChangeGradeView));
-            NavigationService.Configure(Constant.allToddlersView, typeof(AllToddlersView));
-            NavigationService.Configure(Constant.scanView, typeof(ScanView));
-            var mainPage = ((NavigationService)NavigationService).SetRootPage(Constant.loginView);
+            NavigationService.Configure(Constant.LoginView, typeof(LoginView));
+            NavigationService.Configure(Constant.ChangeGradeView, typeof(ChangeGradeView));
+            NavigationService.Configure(Constant.AllToddlersView, typeof(AllToddlersView));
+            NavigationService.Configure(Constant.ScanView, typeof(ScanView));
+            var mainPage = ((NavigationService)NavigationService).SetRootPage(Constant.LoginView);
 
             MainPage = mainPage;
 

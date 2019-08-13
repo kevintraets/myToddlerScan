@@ -45,7 +45,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 username = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.username));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.UsernameProperty));
             }
         }
 
@@ -55,7 +55,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 password = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.password));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.PasswordProperty));
             }
         }
 

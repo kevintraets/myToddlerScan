@@ -10,6 +10,7 @@ using ToddlerScanV2.Models;
 using ToddlerScanV2.View;
 using ToddlerScanV2.ViewModels.Base;
 using Xamarin.Forms;
+using ToddlerScanV2.Constants;
 
 namespace ToddlerScanV2.ViewModels
 {
@@ -22,6 +23,7 @@ namespace ToddlerScanV2.ViewModels
         private ITeacherService _teacherService;
         private string _tripName = "tripName";
         private string _scanName = "scanName";
+        private string _scanConfirmed;
         private Toddler scannedToddler1;
         private Toddler scannedToddler2;
         private Trip trip;
@@ -51,7 +53,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 _tripName = value;
-                OnPropertyChanged("TripName");
+                OnPropertyChanged(Constant.TripNameProperty);
             }
         }
         public string ScanName
@@ -60,8 +62,13 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 _scanName = value;
-                OnPropertyChanged("ScanName");
+                OnPropertyChanged(Constant.ScanNameProperty);
             }
+        }
+
+        public string ScanConfirmed
+        {
+            get { return _scanConfirmed; }
         }
 
 
@@ -96,8 +103,9 @@ namespace ToddlerScanV2.ViewModels
                 Toddlers = scannedToddlers
             };
             _scanService.addScan(scan);
+            _scanConfirmed = Constant.ScanConfirmed;
+            OnPropertyChanged(Constant.ScanConfirmedProperty);
             Debug.WriteLine("scan added");
-
         }
 
     }
