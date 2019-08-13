@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,6 +16,7 @@ namespace uwpSide.ViewModels
     public class NavViewModel
     {
         private INavigateService _nav = new NavigateService();
+        
         public RelayCommand planTripClicked { get; set; }
         public NavViewModel()
         {

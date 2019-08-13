@@ -16,14 +16,14 @@
                 <GradientStop Color="Blue" Offset="0.2"/>
                 <GradientStop Color="AliceBlue" Offset="0.45"/>
                 <GradientStop Color="Blue" Offset="0.9"/>
-            </LinearGradientBrush>           
+            </LinearGradientBrush>
         </Grid.Background>
         <NavigationView Background="Transparent" IsSettingsVisible="False">
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="View trips" x:Name="TripView" Tapped="TripView_Tapped"/>
-                <NavigationViewItem Content="Plan trip" x:Name="PlanTripView" Tapped="PlanTrip_Tapped"/>
-                <NavigationViewItem Content="Create QR code" x:Name="QRCodeView" Tapped="CreateCode_Tapped"/>
-            </NavigationView.MenuItems>
-        </NavigationView>
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Content="View trips" x:Name="TripView" Tapped="TripView_Tapped"/>
+                    <NavigationViewItem Content="Plan trip" x:Name="PlanTripView" Tapped="PlanTrip_Tapped"/>
+                    <NavigationViewItem Content="Create QR code" x:Name="QRCodeView" Tapped="CreateCode_Tapped"/>
+                </NavigationView.MenuItems>
+            </NavigationView>
     </Grid>
 </Page>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using uwpSide.Bootstrap;
+using uwpSide.Constants;
 using uwpSide.Extensions;
 using uwpSide.Interfaces;
 using uwpSide.Models;
@@ -42,7 +43,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _firstName = value;
-                OnPropertyChanged("FirstName");
+                OnPropertyChanged(ConstantString.FirstNameProperty);
             }
         }
         public string LastName
@@ -51,7 +52,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _lastName = value;
-                OnPropertyChanged("LastName");
+                OnPropertyChanged(ConstantString.LastNameProperty);
             }
         }
 
@@ -61,7 +62,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _grade = value;
-                OnPropertyChanged("Grade");
+                OnPropertyChanged(ConstantString.GradeProperty);
             }
         }
 
@@ -73,7 +74,7 @@ namespace uwpSide.ViewModels
                 if(_selectedToddler != value)
                 {
                     _selectedToddler = value;
-                    OnPropertyChanged("SelectedToddler");
+                    OnPropertyChanged(ConstantString.SelectedTeacherProperty);
                     if(_selectedToddler != null)
                     {
                         onClickToddlerCreateQRCode($"{_selectedToddler.FirstName}, {_selectedToddler.LastName}");
@@ -91,7 +92,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _mockToddlers = value;
-                OnPropertyChanged("MockToddlers");
+                OnPropertyChanged(ConstantString.MockToddlersProperty);
             }
         }
 
@@ -110,7 +111,7 @@ namespace uwpSide.ViewModels
                 Grade = _grade
             };
             _toddlerService.addToddler(toddler);
-            OnPropertyChanged("MockToddlers");
+            OnPropertyChanged(ConstantString.MockToddlersProperty);
             Debug.WriteLine(_toddlerService.getAllToddlers().Count());
         }
 
@@ -129,7 +130,7 @@ namespace uwpSide.ViewModels
             writer.Options = options;
             string qrcodeString = name;
             QRImageFromList = writer.Write(qrcodeString);
-            OnPropertyChanged("QRImageFromList");
+            OnPropertyChanged(ConstantString.QRImageFromListProperty);
         }
     }
 }

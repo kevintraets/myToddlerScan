@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using uwpSide.Bootstrap;
+using uwpSide.Constants;
 using uwpSide.Extensions;
 using uwpSide.Interfaces;
 using uwpSide.Models;
@@ -54,7 +55,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _mockToddlers = value;
-                OnPropertyChanged("MockToddlers");
+                OnPropertyChanged(ConstantString.MockToddlersProperty);
 
             }
         }
@@ -66,7 +67,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _selectedTrip = value;
-                OnPropertyChanged("SelectedTrip");
+                OnPropertyChanged(ConstantString.SelectedTripProperty);
                 ClickedTrip();
 
             }
@@ -77,7 +78,7 @@ namespace uwpSide.ViewModels
         {
             tripId = _selectedTrip.Id;
             Debug.WriteLine("in clicked trip: " + _selectedTrip.Toddlers.Count() + tripId);
-            OnPropertyChanged("MockToddlers");
+            OnPropertyChanged(ConstantString.MockToddlersProperty);
         }
     }
 }

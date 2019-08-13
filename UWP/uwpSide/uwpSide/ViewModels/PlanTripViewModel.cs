@@ -33,7 +33,7 @@ namespace uwpSide.ViewModels
         private string _informationString;
         private string _tripAddedString;
 
-        //Because I need to give a new trip an ID.
+        //Because I need to give a new trip an ID while mocking.
         private int index;
 
         public PlanTripViewModel(ITeacherService teacherService, IToddlerService toddlerService, ITripService tripService)
@@ -71,9 +71,9 @@ namespace uwpSide.ViewModels
             {
                 _selectedToddler = value;
                 allSelectedToddlers.Add(_selectedToddler);
-                OnPropertyChanged("SelectedToddler");
+                OnPropertyChanged(ConstantString.SelectedToddlerProperty);
                 _informationString = $"{_selectedToddler.FirstName} added to trip";
-                OnPropertyChanged("InformationString");
+                OnPropertyChanged(ConstantString.InformationStringProperty);
                 Debug.WriteLine($"{DateTime.Now}, selected Toddler is: {_selectedToddler.FirstName}, length is {allSelectedToddlers.Count()}");
             }
 
@@ -85,7 +85,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _selectedTeacher = value;
-                OnPropertyChanged("SelectedTeacher");
+                OnPropertyChanged(ConstantString.SelectedTeacherProperty);
                 Debug.WriteLine($"{DateTime.Now}, selected Teacher is: {_selectedTeacher.FirstName}");
             }
         }
@@ -96,7 +96,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _tripName = value;
-                OnPropertyChanged("TripName");
+                OnPropertyChanged(ConstantString.TripNameProperty);
                 Debug.WriteLine($"{DateTime.Now}, name of trip is: {_tripName}");
             }
         }
@@ -107,7 +107,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _dateTrip = value;
-                OnPropertyChanged("DateTrip");
+                OnPropertyChanged(ConstantString.DateTripProperty);
                 Debug.WriteLine($"{DateTime.Now}, date of the trip is: {_dateTrip.Date.ToShortDateString()}");
             }
         }
@@ -130,7 +130,7 @@ namespace uwpSide.ViewModels
             allSelectedToddlers = new List<Toddler>();
             Debug.WriteLine($"{DateTime.Now}, planned trip added");
             _tripAddedString = ConstantString.TripAddedString;
-            OnPropertyChanged("TripAddedString");
+            OnPropertyChanged(ConstantString.TripAddedStringProperty);
            
         }
 
@@ -140,7 +140,7 @@ namespace uwpSide.ViewModels
             set
             {
                 _informationString = value;
-                OnPropertyChanged("InformationString");
+                OnPropertyChanged(ConstantString.InformationStringProperty);
                 Debug.WriteLine($"{DateTime.Now}, informationstring is {_informationString}");
             }
         }

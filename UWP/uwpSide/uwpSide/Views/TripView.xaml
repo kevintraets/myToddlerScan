@@ -21,26 +21,35 @@
                 <Button x:Name="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" VerticalAlignment="Top" Click="Back_Click"/>
             </CommandBar.Content>
         </CommandBar>
-        <ListView ItemsSource="{Binding MockTrips}" SelectedItem="{Binding SelectedTrip, Mode=TwoWay}" Margin="10,84,1161,83">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Foreground="Black" Text="{Binding Title}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView ItemsSource="{Binding MockToddlers}" Margin="1075,84,10,83">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Foreground="Black">
+        <RelativePanel>
+            <RelativePanel x:Name="LeftPanel">
+                <ListView ItemsSource="{Binding MockTrips}" 
+                          SelectedItem="{Binding SelectedTrip, Mode=TwoWay}" 
+                          Margin="10,50,0,0" Header="Trips">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Foreground="Black" Text="{Binding Title}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </RelativePanel>
+            <RelativePanel RelativePanel.RightOf="LeftPanel">
+                <ListView ItemsSource="{Binding MockToddlers}" Margin="10,50,0,0"
+                          Header="Toddlers">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Foreground="Black">
                             <Run  Text="{Binding FirstName}"/>
                             <Run  Text="{Binding LastName}"/>
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                </TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </RelativePanel>
+        </RelativePanel>
     </Grid>
 </Page>

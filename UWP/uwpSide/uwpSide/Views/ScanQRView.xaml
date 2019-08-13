@@ -21,22 +21,43 @@
                 <Button x:Name="BackButton" Style="{StaticResource NavigationBackButtonNormalStyle}" VerticalAlignment="Top" Click="Back_Click"/>
             </CommandBar.Content>
         </CommandBar>
-        <TextBox PlaceholderText="First Name" HorizontalAlignment="Left" Margin="162,314,0,0" Text="{Binding FirstName, Mode=TwoWay}" VerticalAlignment="Top" Width="135"/>
-        <TextBox PlaceholderText="Last Name" HorizontalAlignment="Left" Margin="162,398,0,0" Text="{Binding LastName, Mode=TwoWay}" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.507,1.433"/>
-        <TextBox PlaceholderText="Grade" HorizontalAlignment="Left" Margin="162,500,0,0" Text="{Binding Grade, Mode=TwoWay}" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.507,1.433"/>
-        <Button Command="{Binding RegisterToddler}" Content="Register Toddler" HorizontalAlignment="Left" Margin="162,599,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="0.504,0.031"/>
-        <Image Source="{Binding QRImageFromList, Mode=TwoWay}" HorizontalAlignment="Left" Height="207" Margin="514,413,0,0" VerticalAlignment="Top" Width="217" RenderTransformOrigin="0.304,0.261"/>
-        <ListView ItemsSource="{Binding MockToddlers, Mode=TwoWay}" SelectedItem="{Binding SelectedToddler, Mode=TwoWay}" HorizontalAlignment="Left" Height="604" Margin="980,260,0,0" VerticalAlignment="Top" Width="398">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Foreground="Black">
+        <RelativePanel>
+            <RelativePanel x:Name="LeftPanel">
+                <TextBox x:Name="FirstName" PlaceholderText="First Name" Margin="10,50,0,0" 
+                         Text="{Binding FirstName, Mode=TwoWay}" 
+                         VerticalAlignment="Top" Width="135"
+                         Header="First Name"/>
+                <TextBox x:Name="LastName" PlaceholderText="Last Name" 
+                         Margin="10" Text="{Binding LastName, Mode=TwoWay}"
+                         Width="135" Header="Last Name"
+                         RelativePanel.Below="FirstName"/>
+                <TextBox x:Name="Grade" PlaceholderText="Grade" Margin="10" 
+                         Text="{Binding Grade, Mode=TwoWay}" Width="135" 
+                         RelativePanel.Below="LastName" Header="Grade"/>
+                <Button Command="{Binding RegisterToddler}"
+                        Content="Register Toddler" 
+                        Margin="10" Width="135" RelativePanel.Below="Grade"/>
+            </RelativePanel>
+            <RelativePanel x:Name="CenterPanel" RelativePanel.RightOf="LeftPanel">
+                <Image Source="{Binding QRImageFromList, Mode=TwoWay}" 
+                  Height="207" Margin="10, 100" Width="217"/>
+            </RelativePanel>
+            <RelativePanel RelativePanel.RightOf="CenterPanel">
+                <ListView ItemsSource="{Binding MockToddlers, Mode=TwoWay}" 
+                      SelectedItem="{Binding SelectedToddler, Mode=TwoWay}" 
+                      Height="604" Margin="10,50,0,0" Width="398">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Foreground="Black">
                             <Run Text="{Binding FirstName}"/>
                             <Run Text="{Binding LastName}"/>
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                </TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </RelativePanel>
+        </RelativePanel>
     </Grid>
 </Page>
