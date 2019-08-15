@@ -12,5 +12,10 @@ namespace ToddlerScanV2.Services.Data
         {
             MockAPI.MockAPI.addScan(scan);
         }
+
+        public List<Scan> allScans()
+        {
+            return MockAPI.MockAPI.getAllScans();
+        }
     }
 }

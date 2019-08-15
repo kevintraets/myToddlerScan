@@ -116,6 +116,10 @@ namespace ToddlerScanV2.MockAPI
             allScans.Add(scan);
         }
 
+        public static List<Scan> getAllScans()
+        {
+            return allScans;
+        }
         //-----------------------------API Teachers------------------------------------
 
         private static List<Teacher> allTeachersMock = new List<Teacher>

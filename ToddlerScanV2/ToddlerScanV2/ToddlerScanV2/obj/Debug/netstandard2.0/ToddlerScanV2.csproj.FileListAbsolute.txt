@@ -16,7 +16,6 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\Todd
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\bin\Debug\netstandard2.0\ToddlerScanV2.dll
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\bin\Debug\netstandard2.0\ToddlerScanV2.pdb
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\View\AllToddlersView.xaml.g.cs
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\View\ChangeGradeView.xaml.g.cs
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanV2\ToddlerScanV2\obj\Debug\netstandard2.0\View\LoginView.xaml.g.cs

@@ -102,10 +102,12 @@ namespace ToddlerScanV2.ViewModels
                 trip = trip,
                 Toddlers = scannedToddlers
             };
+            Debug.WriteLine($"Number of scans before add is: {_scanService.allScans().Count}");
             _scanService.addScan(scan);
             _scanConfirmed = Constant.ScanConfirmed;
             OnPropertyChanged(Constant.ScanConfirmedProperty);
-            Debug.WriteLine("scan added");
+            Debug.WriteLine($"Number of scans after add is: {_scanService.allScans().Count}");
+
         }
 
     }
