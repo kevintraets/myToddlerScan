@@ -20,7 +20,7 @@ namespace uwpSide.ViewModels
     {
         private readonly ITripService _tripService;
         private Trip _selectedTrip;
-        private ObservableCollection<Toddler> _mockToddlers;
+        private ObservableCollection<Toddler> _toddlers;
         private int tripId;
 
         public TripViewModel(ITripService tripService)
@@ -29,12 +29,12 @@ namespace uwpSide.ViewModels
             _tripService = tripService;
         }
 
-        public List<Trip> MockTrips
+        public List<Trip> Trips
         {
             get { return _tripService.getAllTrips(); }
         }
 
-        public ObservableCollection<Toddler> MockToddlers
+        public ObservableCollection<Toddler> Toddlers
         {
 
             get
@@ -54,8 +54,8 @@ namespace uwpSide.ViewModels
 
             set
             {
-                _mockToddlers = value;
-                OnPropertyChanged(ConstantString.MockToddlersProperty);
+                _toddlers = value;
+                OnPropertyChanged(ConstantString.ToddlersProperty);
 
             }
         }
@@ -78,7 +78,7 @@ namespace uwpSide.ViewModels
         {
             tripId = _selectedTrip.Id;
             Debug.WriteLine("in clicked trip: " + _selectedTrip.Toddlers.Count() + tripId);
-            OnPropertyChanged(ConstantString.MockToddlersProperty);
+            OnPropertyChanged(ConstantString.ToddlersProperty);
         }
     }
 }

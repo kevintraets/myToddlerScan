@@ -28,7 +28,7 @@
                 <DatePicker  x:Name="TripDate"  SelectedDate="{Binding DateTrip, Mode=TwoWay}" 
                              HorizontalAlignment="Left" VerticalAlignment="Top"
                              RelativePanel.Below="TripName" Header="Date" Margin="10"/>
-                <ComboBox x:Name="TeachersName" ItemsSource="{Binding MockTeacher}" 
+                <ComboBox x:Name="TeachersName" ItemsSource="{Binding Teacher}" 
                           SelectedItem="{Binding SelectedTeacher, Mode=TwoWay}" 
                           HorizontalAlignment="Left" VerticalAlignment="Top"
                           Width="296" PlaceholderText="Teacher" Margin="10"
@@ -52,9 +52,9 @@
                             Text="{Binding TripAddedString}" Width="159" RelativePanel.Below="ConfirmButton"/>
             </RelativePanel>
             <RelativePanel RelativePanel.RightOf="LeftPanel">
-                <ListView x:Name="ToddlersList" ItemsSource="{Binding MockToddlers}" 
+                <ListView x:Name="ToddlersList" ItemsSource="{Binding Toddlers}" 
                           SelectedItem="{Binding SelectedToddler, Mode=TwoWay}" 
-                          Margin="10,50,0,0" Width="386">
+                          Margin="10,50,0,0" Width="386" Header="Toddlers">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>

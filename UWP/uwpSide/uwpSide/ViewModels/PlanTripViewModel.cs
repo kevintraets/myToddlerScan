@@ -22,8 +22,8 @@ namespace uwpSide.ViewModels
         private readonly ITeacherService _teacherService;
         private readonly IToddlerService _toddlerService;
         private readonly ITripService _tripService;
-        private ObservableCollection<Toddler> _mockToddlers;
-        private ObservableCollection<Teacher> _mockTeacher;
+        private ObservableCollection<Toddler> _toddlers;
+        private ObservableCollection<Teacher> _teacher;
         private Teacher _selectedTeacher;
         private Toddler _selectedToddler;
         private List<Toddler> allSelectedToddlers = new List<Toddler>();
@@ -51,13 +51,13 @@ namespace uwpSide.ViewModels
             
         }
 
-        public ObservableCollection<Teacher> MockTeacher
+        public ObservableCollection<Teacher> Teacher
         {
             get { return _teacherService.getAllTeachers().ToObservableCollection(); }
 
         }
 
-        public ObservableCollection<Toddler> MockToddlers
+        public ObservableCollection<Toddler> Toddlers
         {
             get { return _toddlerService.getAllToddlers().ToObservableCollection();  }
 

@@ -25,7 +25,7 @@ namespace uwpSide.ViewModels
         private string _lastName;
         private string _grade;
         private IToddlerService _toddlerService;
-        private ObservableCollection<Toddler> _mockToddlers;
+        private ObservableCollection<Toddler> _toddlers;
         private Toddler _selectedToddler;
 
 
@@ -86,13 +86,13 @@ namespace uwpSide.ViewModels
             }
         }
 
-        public ObservableCollection<Toddler> MockToddlers
+        public ObservableCollection<Toddler> Toddlers
         {
             get { return _toddlerService.getAllToddlers().ToObservableCollection(); }
             set
             {
-                _mockToddlers = value;
-                OnPropertyChanged(ConstantString.MockToddlersProperty);
+                _toddlers = value;
+                OnPropertyChanged(ConstantString.ToddlersProperty);
             }
         }
 
@@ -111,7 +111,7 @@ namespace uwpSide.ViewModels
                 Grade = _grade
             };
             _toddlerService.addToddler(toddler);
-            OnPropertyChanged(ConstantString.MockToddlersProperty);
+            OnPropertyChanged(ConstantString.ToddlersProperty);
             Debug.WriteLine(_toddlerService.getAllToddlers().Count());
         }
 

@@ -23,7 +23,7 @@
         </CommandBar>
         <RelativePanel>
             <RelativePanel x:Name="LeftPanel">
-                <ListView ItemsSource="{Binding MockTrips}" 
+                <ListView ItemsSource="{Binding Trips}" 
                           SelectedItem="{Binding SelectedTrip, Mode=TwoWay}" 
                           Margin="10,50,0,0" Header="Trips">
                     <ListView.ItemTemplate>
@@ -36,7 +36,7 @@
                 </ListView>
             </RelativePanel>
             <RelativePanel RelativePanel.RightOf="LeftPanel">
-                <ListView ItemsSource="{Binding MockToddlers}" Margin="10,50,0,0"
+                <ListView ItemsSource="{Binding Toddlers}" Margin="10,50,0,0"
                           Header="Toddlers">
                     <ListView.ItemTemplate>
                         <DataTemplate>

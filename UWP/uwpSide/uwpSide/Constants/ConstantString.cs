@@ -18,7 +18,7 @@ namespace uwpSide.Constants
         public static string FirstNameProperty = "FirstName";
         public static string LastNameProperty = "LastName";
         public static string GradeProperty = "Grade";
-        public static string MockToddlersProperty = "MockToddlers";
+        public static string ToddlersProperty = "Toddlers";
         public static string QRImageFromListProperty = "QRImageFromList";
         public static string SelectedTripProperty = "SelectedTrip";
     }

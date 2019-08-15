@@ -43,9 +43,9 @@
                   Height="207" Margin="10, 100" Width="217"/>
             </RelativePanel>
             <RelativePanel RelativePanel.RightOf="CenterPanel">
-                <ListView ItemsSource="{Binding MockToddlers, Mode=TwoWay}" 
+                <ListView ItemsSource="{Binding Toddlers, Mode=TwoWay}" 
                       SelectedItem="{Binding SelectedToddler, Mode=TwoWay}" 
-                      Height="604" Margin="10,50,0,0" Width="398">
+                      Height="604" Margin="10,50,0,0" Width="398" Header="Toddlers">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
