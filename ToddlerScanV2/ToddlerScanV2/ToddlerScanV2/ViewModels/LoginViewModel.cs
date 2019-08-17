@@ -26,7 +26,6 @@ namespace ToddlerScanV2.ViewModels
         User user = new User();
         private IValidateUserService _validateUserService;
         private INavigationService _navigation;
-        public event PropertyChangedEventHandler PropertyChanged;
 
         //ctor
         public LoginViewModel(INavigationService navigation, IValidateUserService validateUser)
@@ -45,7 +44,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 username = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.UsernameProperty));
+                OnPropertyChanged(Constant.UsernameProperty);
             }
         }
 
@@ -55,7 +54,7 @@ namespace ToddlerScanV2.ViewModels
             set
             {
                 password = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Constant.PasswordProperty));
+                OnPropertyChanged(Constant.PasswordProperty);
             }
         }
 
@@ -78,10 +77,12 @@ namespace ToddlerScanV2.ViewModels
 
         private void onSignUp()
         {
+            user.Username = username;
+            user.Password = password;
+
             if (!string.IsNullOrEmpty(user.Username)&&!string.IsNullOrEmpty(user.Password))
             {
-                user.Username = username;
-                user.Password = password;
+
                 _validateUserService.userSignIn(user);
                 App.Current.MainPage.DisplayAlert("User added", "You can log in", "Ok");
                 _navigation.NavigateAsync(nameof(LoginView));

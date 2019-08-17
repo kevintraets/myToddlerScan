@@ -11,6 +11,7 @@ namespace ToddlerScanV2.Services.Data
 
         public ValidateUserService() { }
 
+        //Next are the implementations of the MockApi, delete methods when the API exists.
         public List<User> getAllUsers()
         {
             return MockAPI.MockAPI.getAllUsersMock();
@@ -25,5 +26,31 @@ namespace ToddlerScanV2.Services.Data
         {
             return MockAPI.MockAPI.ValidateUser(usersInDatabase, userToValidate);
         }
-    }
+
+       //Next are the implementations if a real API exists.
+       /* 
+        * private IGenericRepository _genericRepository;
+        * public ValidateUserService(IGenericRepository genericRepository)
+        * {
+        *      _genericRepository = genericRepository;
+        * }
+        * public async Task<IEnumerable<User>> getAllUsers()
+        * {
+        *   UriBuilder builder = new UriBuilder(ApiConstants.BaseApiUrl);
+        *   {
+        *       Path = ApiConstants.User;
+        *   };
+        *   var users = await _genericRepository.GetAsync<List<User>>(builder.ToString());
+        * }
+        * public async Task<User> userSignIn (User user)
+        * {
+        *   UriBuilder builder = new UriBuilder(ApiConstants.BaseApiUrl);
+        *   {
+        *       Path = ApiConstants.User;
+        *   };
+        *   var userToAdd = await _genericRepository.PostAsync(builder.ToString(), user);
+        *   return userToAdd;
+        * }
+        */
+   }
 }
