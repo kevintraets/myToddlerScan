@@ -18,7 +18,7 @@
                 <GradientStop Color="Blue" Offset="0.9"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <NavigationView Background="Transparent" IsSettingsVisible="False">
+        <NavigationView Background="Transparent" IsSettingsVisible="False" PaneDisplayMode="LeftMinimal">
                 <NavigationView.MenuItems>
                     <NavigationViewItem Content="View trips" x:Name="TripView" Tapped="TripView_Tapped"/>
                     <NavigationViewItem Content="Plan trip" x:Name="PlanTripView" Tapped="PlanTrip_Tapped"/>

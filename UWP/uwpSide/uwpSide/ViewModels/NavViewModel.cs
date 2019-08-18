@@ -23,7 +23,6 @@ namespace uwpSide.ViewModels
             planTripClicked = new RelayCommand(clickedOnPlanTrip);
         }
 
-        //I'm not able to bind this on startup...
         private void clickedOnPlanTrip()
         {
             _nav.NavigateTo(typeof(PlanTripView));

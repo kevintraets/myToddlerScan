@@ -120,6 +120,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Bootstrap\AppContainer.cs" />
+    <Compile Include="Constants\ApiConstants.cs" />
     <Compile Include="Constants\ConstantString.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
