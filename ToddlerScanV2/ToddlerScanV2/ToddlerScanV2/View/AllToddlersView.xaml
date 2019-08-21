@@ -12,7 +12,7 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding MockToddlers}"
+            <ListView ItemsSource="{Binding Toddlers}"
                       SelectedItem="{Binding SelectedToddler, Mode=TwoWay}"
                       HasUnevenRows="True" CachingStrategy="RecycleElement" SeparatorVisibility="None">
                 <ListView.ItemTemplate>

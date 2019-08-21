@@ -55,7 +55,7 @@ namespace ToddlerScanV2.ViewModels
             _navigation.NavigateAsync(nameof(ScanView));
         }
 
-        public ObservableCollection<Toddler> MockToddlers
+        public ObservableCollection<Toddler> Toddlers
         {
             get { return _toddlerService.getAllToddlers().ToObservableCollection();  }
         }
