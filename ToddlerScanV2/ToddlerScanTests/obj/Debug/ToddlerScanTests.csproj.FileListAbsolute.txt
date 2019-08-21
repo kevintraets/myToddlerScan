@@ -130,3 +130,9 @@ C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\o
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\obj\Debug\ToddlerScanTests.csproj.CopyComplete
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\obj\Debug\ToddlerScanTests.dll
 C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\obj\Debug\ToddlerScanTests.pdb
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\ZXing.Net.Mobile.Core.dll
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\zxing.portable.dll
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\ZXingNetMobile.dll
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\Autofac.dll
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\Autofac.pdb
+C:\Users\11601860\Desktop\ToddlerScanVersionTwo\ToddlerScanV2\ToddlerScanTests\bin\Debug\Autofac.xml

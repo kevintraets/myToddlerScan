@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Autofac/4.9.3": {
+      "Autofac/4.9.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Autofac.dll": {}
@@ -93,7 +93,7 @@
           "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.618605-pre2": {
+      "Xamarin.Forms/4.1.0.673156": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -126,14 +126,14 @@
     }
   },
   "libraries": {
-    "Autofac/4.9.3": {
-      "sha512": "vEUiP3N+sCRdd6oYXwoJZ9L3iifKEnDtsqajXZDjSol8McSKbag2fJ/yfSc4f2IqwWXRX0/73TRrQjOHsntSIw==",
+    "Autofac/4.9.4": {
+      "sha512": "dYiDG4yoV7GDCoOc66d1sqMmg2gwDyomHKgATuMfhFzYxVpWEltToHVHXI3I9vOEvIXE55S4OZPY0ldiZmZtpA==",
       "type": "package",
-      "path": "autofac/4.9.3",
+      "path": "autofac/4.9.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.4.9.3.nupkg.sha512",
+        "autofac.4.9.4.nupkg.sha512",
         "autofac.nuspec",
         "lib/net45/Autofac.dll",
         "lib/net45/Autofac.pdb",
@@ -422,10 +422,10 @@
         "sqlitepclraw.core.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.618605-pre2": {
-      "sha512": "/aJmHYW2djou6TXOQtceNwLQ5Yoqs9tEt4wuyg2LllwIEM11yy15gzifaaMS/JMnhBRAm6m5QKGGJ8lXwkIKXw==",
+    "Xamarin.Forms/4.1.0.673156": {
+      "sha512": "9NrnfD7kzGq/qjMOrdkTMxtZBOakwo5kEcay8Z6Iwv88bx11J/CDtDVJ0a5IPzfRwRq9XCcrMj3nu9DLQy6ZdA==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.618605-pre2",
+      "path": "xamarin.forms/4.1.0.673156",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -664,7 +664,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.618605-pre2.nupkg.sha512",
+        "xamarin.forms.4.1.0.673156.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -696,11 +696,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Autofac >= 4.9.3",
+      "Autofac >= 4.9.4",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
       "Polly >= 7.1.0",
-      "Xamarin.Forms >= 4.2.0.618605-pre2",
+      "Xamarin.Forms >= 4.1.0.673156",
       "ZXing.Net.Mobile >= 2.4.1",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -748,7 +748,7 @@
         "dependencies": {
           "Autofac": {
             "target": "Package",
-            "version": "[4.9.3, )"
+            "version": "[4.9.4, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -766,7 +766,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.618605-pre2, )"
+            "version": "[4.1.0.673156, )"
           },
           "ZXing.Net.Mobile": {
             "target": "Package",

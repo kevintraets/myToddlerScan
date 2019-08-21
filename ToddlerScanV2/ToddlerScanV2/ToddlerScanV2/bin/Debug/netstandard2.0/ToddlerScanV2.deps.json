@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "8db34f177b4560a21d89db001db46636b00e2665"
+    "signature": "001a7dfd457a98afa00fc7fc1404872aeb38a3c6"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,11 +9,11 @@
     ".NETStandard,Version=v2.0/": {
       "ToddlerScanV2/1.0.0": {
         "dependencies": {
-          "Autofac": "4.9.3",
+          "Autofac": "4.9.4",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
           "Polly": "7.1.0",
-          "Xamarin.Forms": "4.2.0.618605-pre2",
+          "Xamarin.Forms": "4.1.0.673156",
           "ZXing.Net.Mobile": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
@@ -21,11 +21,11 @@
           "ToddlerScanV2.dll": {}
         }
       },
-      "Autofac/4.9.3": {
+      "Autofac/4.9.4": {
         "runtime": {
           "lib/netstandard2.0/Autofac.dll": {
-            "assemblyVersion": "4.9.3.0",
-            "fileVersion": "4.9.3.0"
+            "assemblyVersion": "4.9.4.0",
+            "fileVersion": "4.9.4.0"
           }
         }
       },
@@ -90,19 +90,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.2.0.618605-pre2": {
+      "Xamarin.Forms/4.1.0.673156": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.2.0.10"
+            "fileVersion": "4.1.0.308"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.2.0.10"
+            "fileVersion": "4.1.0.308"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.2.0.10"
+            "fileVersion": "4.1.0.308"
           }
         }
       },
@@ -130,12 +130,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Autofac/4.9.3": {
+    "Autofac/4.9.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vEUiP3N+sCRdd6oYXwoJZ9L3iifKEnDtsqajXZDjSol8McSKbag2fJ/yfSc4f2IqwWXRX0/73TRrQjOHsntSIw==",
-      "path": "autofac/4.9.3",
-      "hashPath": "autofac.4.9.3.nupkg.sha512"
+      "sha512": "sha512-dYiDG4yoV7GDCoOc66d1sqMmg2gwDyomHKgATuMfhFzYxVpWEltToHVHXI3I9vOEvIXE55S4OZPY0ldiZmZtpA==",
+      "path": "autofac/4.9.4",
+      "hashPath": "autofac.4.9.4.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -186,12 +186,12 @@
       "path": "sqlitepclraw.core/1.1.11",
       "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
     },
-    "Xamarin.Forms/4.2.0.618605-pre2": {
+    "Xamarin.Forms/4.1.0.673156": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/aJmHYW2djou6TXOQtceNwLQ5Yoqs9tEt4wuyg2LllwIEM11yy15gzifaaMS/JMnhBRAm6m5QKGGJ8lXwkIKXw==",
-      "path": "xamarin.forms/4.2.0.618605-pre2",
-      "hashPath": "xamarin.forms.4.2.0.618605-pre2.nupkg.sha512"
+      "sha512": "sha512-9NrnfD7kzGq/qjMOrdkTMxtZBOakwo5kEcay8Z6Iwv88bx11J/CDtDVJ0a5IPzfRwRq9XCcrMj3nu9DLQy6ZdA==",
+      "path": "xamarin.forms/4.1.0.673156",
+      "hashPath": "xamarin.forms.4.1.0.673156.nupkg.sha512"
     },
     "ZXing.Net.Mobile/2.4.1": {
       "type": "package",

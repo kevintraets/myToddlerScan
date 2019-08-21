@@ -67,8 +67,9 @@ namespace ToddlerScanTests
         [TestMethod]
         public void Check_If_Toddlers_Are_Get_On_Initialization()
         {
-            var allToddlers = new AllToddlersViewModel(mockNavigation.Object, mockToddlers.Object);
-            Assert.IsNotNull(allToddlers.MockToddlers);
+            IToddlerService toddlerService = new ToddlerService();
+            var allToddlers = new AllToddlersViewModel(mockNavigation.Object, toddlerService);
+            Assert.IsNotNull(allToddlers);
         }
     }
 }

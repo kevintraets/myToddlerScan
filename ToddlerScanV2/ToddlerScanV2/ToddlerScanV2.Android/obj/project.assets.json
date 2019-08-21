@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "Autofac/4.9.3": {
+      "Autofac/4.9.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Autofac.dll": {}
@@ -422,7 +422,7 @@
           "build/monoandroid81/Xamarin.Android.Support.Vector.Drawable.targets": {}
         }
       },
-      "Xamarin.Forms/4.2.0.618605-pre2": {
+      "Xamarin.Forms/4.1.0.673156": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.1",
@@ -471,10 +471,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Autofac": "4.9.3",
+          "Autofac": "4.9.4",
           "Newtonsoft.Json": "12.0.2",
           "Polly": "7.1.0",
-          "Xamarin.Forms": "4.2.0.618605-pre2",
+          "Xamarin.Forms": "4.1.0.673156",
           "ZXing.Net.Mobile": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
@@ -488,14 +488,14 @@
     }
   },
   "libraries": {
-    "Autofac/4.9.3": {
-      "sha512": "vEUiP3N+sCRdd6oYXwoJZ9L3iifKEnDtsqajXZDjSol8McSKbag2fJ/yfSc4f2IqwWXRX0/73TRrQjOHsntSIw==",
+    "Autofac/4.9.4": {
+      "sha512": "dYiDG4yoV7GDCoOc66d1sqMmg2gwDyomHKgATuMfhFzYxVpWEltToHVHXI3I9vOEvIXE55S4OZPY0ldiZmZtpA==",
       "type": "package",
-      "path": "autofac/4.9.3",
+      "path": "autofac/4.9.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "autofac.4.9.3.nupkg.sha512",
+        "autofac.4.9.4.nupkg.sha512",
         "autofac.nuspec",
         "lib/net45/Autofac.dll",
         "lib/net45/Autofac.pdb",
@@ -1124,10 +1124,10 @@
         "xamarin.android.support.vector.drawable.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.618605-pre2": {
-      "sha512": "/aJmHYW2djou6TXOQtceNwLQ5Yoqs9tEt4wuyg2LllwIEM11yy15gzifaaMS/JMnhBRAm6m5QKGGJ8lXwkIKXw==",
+    "Xamarin.Forms/4.1.0.673156": {
+      "sha512": "9NrnfD7kzGq/qjMOrdkTMxtZBOakwo5kEcay8Z6Iwv88bx11J/CDtDVJ0a5IPzfRwRq9XCcrMj3nu9DLQy6ZdA==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.618605-pre2",
+      "path": "xamarin.forms/4.1.0.673156",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1366,7 +1366,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.618605-pre2.nupkg.sha512",
+        "xamarin.forms.4.1.0.673156.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1410,7 +1410,7 @@
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.1",
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
-      "Xamarin.Forms >= 4.2.0.618605-pre2",
+      "Xamarin.Forms >= 4.1.0.673156",
       "ZXing.Net.Mobile >= 2.4.1"
     ]
   },
@@ -1477,7 +1477,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.618605-pre2, )"
+            "version": "[4.1.0.673156, )"
           },
           "ZXing.Net.Mobile": {
             "target": "Package",
