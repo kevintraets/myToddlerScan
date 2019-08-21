@@ -37,7 +37,8 @@ namespace uwpSide.Views
             this.InitializeComponent();
             this.DataContext = new TripViewModel(_tripService);
 
-            //Temp Code
+            //Temp Code for going back
+
             KeyboardAccelerator GoBack = new KeyboardAccelerator();
             GoBack.Key = VirtualKey.GoBack;
             GoBack.Invoked += BackInvoked;
