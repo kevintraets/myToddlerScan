@@ -27,7 +27,7 @@ namespace localWebApi.Controllers
         }
 
         // GET: api/Scan/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetScan")]
         public Scan Get(int id)
         {
             using (context)

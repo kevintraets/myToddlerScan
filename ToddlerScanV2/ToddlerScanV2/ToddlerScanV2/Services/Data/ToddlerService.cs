@@ -32,6 +32,7 @@ namespace ToddlerScanV2.Services.Data
          * private IGenericRepository _genericRepository;
          * public ToddlerService(IGenericRepository genericRepository)
          * {
+         *      genericRepository = AppContainer.Resolve<IGenericRepository>();
          *      _genericRepository = genericRepository
          * }
          * 

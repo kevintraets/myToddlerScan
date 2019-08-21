@@ -18,6 +18,7 @@ namespace ToddlerScanV2.Services.Data
          * private IGenericRepository _genericRepository;
          * public TripService(IGenericRepository genericRepository)
          * {
+         *      genericRepository = AppContainer.Resolve<IGenericRepository>();
          *      _genericRepository = genericRepository
          * }
          * public async Task<Trip> getTripById(int id)
@@ -29,6 +30,6 @@ namespace ToddlerScanV2.Services.Data
          *      return await _genericRepository.GetAsync<Trip>(builder.ToString());
          * }
          */
- 
+
     }
 }

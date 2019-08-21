@@ -25,12 +25,13 @@ namespace ToddlerScanV2.Services.Data
          * private IGenericRepository _genericRepository;
          * public ScanService(IGenericRepository genericRepository)
          * {
+         *      genericRepository = AppContainer.Resolve<IGenericRepository>();
          *      _genericRepository = genericRepository;
          * }
          * 
          * public async Task<IEnumberable<Scan>> allScans()
          * {
-         *      UriBuilder builder = new UriBuilder (ApiConstants.BaseApiUrl)
+         *      UriBuilder builder = new UriBuilder(ApiConstants.BaseApiUrl)
          *      {
          *          Path = ApiConstants.Scan;
          *      };

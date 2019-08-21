@@ -19,7 +19,7 @@ namespace localWebApi.Controllers
         }
 
         // GET: api/ToddlerScan/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetToddlerScan")]
         public string Get(int id)
         {
             return "value";

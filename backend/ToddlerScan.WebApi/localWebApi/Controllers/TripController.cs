@@ -25,7 +25,7 @@ namespace localWebApi.Controllers
         }
 
         // GET: api/Trip/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetTrip")]
         public Trip Get(int id)
         {
             using (context)

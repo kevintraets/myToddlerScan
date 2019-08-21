@@ -34,7 +34,7 @@ namespace localWebApi.Controllers
         }
 
         // GET: api/Toddler/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetToddler")]
         public Toddler Get(int id)
         {
             using (context)
